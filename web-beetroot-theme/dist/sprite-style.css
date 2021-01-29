@@ -1,0 +1,10 @@
+.social-networks-logo {
+    width: 32px;
+    height: 32px;
+    fill: #ebebeb;
+    stroke: none;
+    transition: fill .3s;
+}
+.social-networks-logo:hover {
+    fill: #a2e6cb;
+}

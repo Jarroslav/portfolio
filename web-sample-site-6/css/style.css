@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.title {
+    text-transform: uppercase;
+}
+.hero {
+    background: url("../img/hero-bg.jpg.png") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.hero__logo {
+    width: 70px;
+    height: 70px;
+    fill: #fff;
+    margin: 0 auto;
+    padding-top: 285px;
+}
+.hero__title {
+    font-weight: 700;
+    font-size: 40px;
+    width: 630px;
+    margin: 0 auto;
+    line-height: 150%;
+    letter-spacing: 18px;
+    padding-top: 90px;
+}
+.hero__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    width: 610px;
+    margin: 0 auto;
+    line-height: 200%;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+.hero__scroll {
+    padding: 250px 0 103px 0;
+}
+/*about section was made without <form> just for example*/
+.about {
+    padding: 160px 0;
+}
+.about__container {
+    border: 2px solid #000;
+    width: 900px;
+    height: 310px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.about__title {
+    margin: -19px 0 20px 0;
+
+    letter-spacing: 10px;
+    font-size: 26px;
+}
+.about__title--content {
+    width: 350px;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+}
+.about__text {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 150%;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.about__text--thin {
+    width: 40%;
+}
+.services {
+    background: url("../img/services.jpg.png") center center no-repeat;
+    background-size: cover;
+    padding: 130px 0 110px 0;
+}
+.services__container {
+    border: 2px solid #fff;
+    width: 900px;
+    height: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+.services__legend, .what-we-do__legend, .contact__legend {
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-size: 26px;
+    padding: 0 75px;
+}
+.services__title--content {
+    width: 350px;
+    background: transparent;
+    text-align: center;
+    display: inline-block;
+}
+.services__text {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 150%;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.services__text--thin {
+    width: 40%;
+}
+.what-we-do {
+    border: 2px solid #fff;
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.what-we-do__container {
+    padding: 0 200px;
+    margin: 110px 0;
+}
+.what-we-do__item {
+    margin: 70px 0;
+}
+.what-we-do__logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.what-we-do__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.what-we-do__text {
+    font-weight: 300;
+    line-height: 150%;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+.more__item {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+.more__topworkz {
+    background: url("../img/topworkz.png") center center no-repeat;
+    height: 237px;
+    width: 548px;
+    border-left: 0;
+}
+.more__worktop {
+    background: url("../img/wortop.png") center center no-repeat;
+    height: 237px;
+    width: 548px;
+    border-left: 0;
+}
+.more__joint {
+    background: url("../img/joint.png") center center no-repeat;
+    height: 237px;
+    width: 802px;
+}
+.more__lable {
+    background: url("../img/lable.png") center center no-repeat;
+    height: 237px;
+    width: 802px;
+}
+.more__market {
+    background: url("../img/market.png") center center no-repeat;
+    height: 237px;
+    width: 550px;
+    border-right: 0;
+}
+.more__kyiv {
+    background: url("../img/kyiv.png") center center no-repeat;
+    height: 237px;
+    width: 550px;
+    border-right: 0;
+}
+.more__title {
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 180px;
+    left: 30px;
+    width: fit-content;
+}
+.contact {
+    margin-bottom: 80px;
+}
+.contact__container {
+    border: 2px solid #000;
+    width: 900px;
+    height: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 200px;
+}
+.contact__text {
+    padding: 28px 0;
+}
+.contact__btn {
+    width: 40%;
+    height: 20%;
+    border: none;
+    background-color: #3c3c3c;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer__logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.footer__rights {
+    font-weight: 400;
+}

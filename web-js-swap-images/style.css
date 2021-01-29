@@ -1,0 +1,25 @@
+/*
+tr, th {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+.black {
+    background: #000;
+}
+.green {
+    background: green;
+}
+.yellow {
+    background: yellow;
+}*/
+#thumbs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+#largeImg {
+    height: 400px;
+    width: 510px;
+    background-size: cover;
+}

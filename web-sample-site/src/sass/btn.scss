@@ -1,0 +1,24 @@
+.btn {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border: 2px solid $button-border  ;
+  padding: 0;
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $button-text-color;
+    padding: 20px 56px;
+  }
+  &__link--small {
+    padding: 20px 41px;
+  }
+  &:hover {
+    background: $base-color;
+    border: none;
+  }
+  &:hover &__link {
+    color: #fff;
+  }
+}

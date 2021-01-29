@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First exam</title>
+    <link rel="icon" type="image/png" href="https://cdn.frankerfacez.com/emoticon/162146/1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <meta name="Description" content="Yaroslav Krivushenko">
+</head>
+<body>
+    <header class="header">
+        <div class="header__navbar navbar">
+            <div class="navbar__currency-select">
+                <p class="navbar__text">Currency : </p>
+                <select class="navbar__select" name="" id="">
+                    <option value="">GBR</option>
+                    <option value="">USD</option>
+                    <option value="">UAH</option>
+                </select>
+            </div>
+            <div class="header__user-options user-options">
+                <a class="user-options__link" href="#register">Register</a>
+                <a class="user-options__link" href="#sign-in">Sign In</a>
+                <div class="user-options__dropdown dropdown">
+                    <button class="dropdown__btn">
+                        <svg class="icon">
+                            <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                        </svg>
+                        <p class="dropdown__text">empty <i class="arrow down"></i></p>
+                    </button>
+                    <div class="dropdown__content">
+                        <a class="dropdown__link" href="#">Here will be show your goods</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home__header">
+            <div class="logo">
+                <p><span class="logo__bold-text">AVENUE</span> FASHION</p>
+            </div>
+            <nav class="home__nav nav">
+                <div class="home__list">
+                    <div class="nav__item mens">
+                        <p class="nav__sorts">MENS</p>
+                        <p><i class="arrow down"></i></p>
+                        <div class="mens__content">
+                            <div class="mens__clothes nav">
+                                <ul class="nav__list casual">
+                                    <li class="nav__title">CASUAL</li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Jackets</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Hoodies & Sweatshirts</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Polo Shirts</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Sportswear</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Trousers & Chinos</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">T-Shirts</a></li>
+                                </ul>
+                                <ul class="nav__list formal">
+                                    <li class="nav__title">FORMAL</li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Jackets</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Shirts</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Suits</a></li>
+                                    <li class="nav__item--drop"><a class="nav__link" href="">Trousers</a></li>
+                                </ul>
+                            </div>
+                            <div class="sale">
+                                <a class="sale__link" href="javascript:void(0)"><span class="sale__link--bold">Autumn sale!</span> up to 50% off</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__item">
+                        <p class="nav__sorts">WOMENS</p>
+                        <p><i class="arrow down"></i></p>
+                    </div>
+                    <div class="nav__item">
+                        <p class="nav__sorts">THE BRAND</p>
+                        <p></p>
+                    </div>
+                    <div class="nav__item">
+                        <p class="nav__sorts">LOCAL STORIES</p>
+                        <p><i class="arrow down"></i></p>
+                    </div>
+                    <div class="nav__item">
+                        <p class="nav__sorts">LOOK BOOK</p>
+                        <p><i class="arrow down"></i></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="nav__item search-container">
+                        <form class="search-container__form" action="/action_page.php">
+                            <input class="search-container__input" type="text" placeholder="Search.." name="search">
+                            <button class="search-container__button" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="btn-container">
+            <div class="btn-container__position">
+                <button class="btn"><a class="btn__link" href="javascript:void(0)">SHOP MEN'S COLLECTION</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <hr class="divider">
+        <nav class="gallery__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">POPULAR</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">NEW ARRIVALS</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">BEST SELLERS</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">SPECIAL OFFERS</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">COMING SOON</a></li>
+            </ul>
+        </nav>
+        <div class="grid">
+            <div class="item1">
+                <p class="price"><sup>&pound</sup>89.99</p>
+                <div class="description">
+                    <h5 class="description__title">Womens burnt orange casual tee  £29.95</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item2">
+                <p class="price"><sup>&pound</sup>47.50</p>
+                <div class="description">
+                    <h5 class="description__title">Womens burnt orange casual tee  £29.95</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item3">
+                <p class="price"><del><sup>&pound</sup>107</del> <sup> &pound</sup>89.99</p>
+                <div class="description description--big">
+                    <h5 class="description__title">Womens burnt orange casual tee  £29.95</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item4">
+                <p class="price"><sup>&pound</sup>69.95</p>
+                <div class="description description--big">
+                    <h5 class="description__title">Mens burnt mint casual tee  £69.95</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item5">
+                <p class="price"><sup>&pound</sup>29.95</p>
+                <div class="info"><img src="dist/img/info.png" alt="" class="info"></div>
+                <div class="preview">
+                    <div><img src="dist/img/thumb-back.png" alt="thumb-back"></div>
+                    <div><img src="dist/img/thumb-front.png" alt="thumb-front"></div>
+                </div>
+                <div class="description">
+                    <h5 class="description__title">Womens burnt orange casual tee  £29.95</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item6">
+                <p class="price"><sup>&pound</sup>34.79</p>
+                <div class="description">
+                    <h5 class="description__title">Womens burnt olive casual tee  £34.79</h5>
+                    <p class="description__text">Classic casual t-shirt for women on the move.
+                        100% cotton.</p>
+                    <div class="description__options options">
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#cart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="options__container">
+                            <svg class="icon">
+                                <use xlink:href="dist/svg/sprites.svg#two-arrows"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+    <section class="product">
+        <div class="product__container">
+            <div class="product__item left">
+                <h5 class="product__title"><span class="product__title--bold">men’s</span> lookbook</h5>
+                <p class="product__text">Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.</p>
+                <div class="product__botton">
+                    <button class="btn"><a class="btn__link btn__link--small" href="javascript:void(0)">view now</a></button>
+                </div>
+            </div>
+            <div class="product__item middle">
+                <h5 class="product__title"><span class="product__title--bold">women’s</span> lookbook</h5>
+                <p class="product__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
+                    Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+                <div class="product__botton">
+                    <button class="btn"><a class="btn__link btn__link--small" href="javascript:void(0)">view now</a></button>
+                </div>
+            </div>
+            <div class="product__item right">
+                <h5 class="product__title"><span class="product__title--bold">your</span> lookbook</h5>
+                <p class="product__text">See an item you like and click the &#9825 button to add it to your lookbook where you can create your own perfect look.
+                    It’s like your own boutique!</p>
+                <div class="product__botton">
+                    <button class="btn"><a class="btn__link btn__link--small" href="javascript:void(0)">view now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__content">
+            <div class="contact__container">
+                <h5 class="contact__title">Information</h5>
+                <a class="contact__link" href="">The brand</a>
+                <a class="contact__link" href="">Local stores</a>
+                <a class="contact__link" href="">Customer service</a>
+                <a class="contact__link" href="">Privacy & cookies</a>
+                <a class="contact__link" href="">Site map</a>
+            </div>
+            <div class="contact__container">
+                <h5 class="contact__title">Why buy from us</h5>
+                <a class="contact__link" href="">Shipping & returns</a>
+                <a class="contact__link" href="">Secure shopping</a>
+                <a class="contact__link" href="">Testimonials</a>
+                <a class="contact__link" href="">Award winning</a>
+                <a class="contact__link" href="">Ethical trading</a>
+            </div>
+            <div class="contact__container">
+                <h5 class="contact__title">Ethical trading</h5>
+                <a class="contact__link" href="">Sign in</a>
+                <a class="contact__link" href="">Register</a>
+                <a class="contact__link" href="">View cart</a>
+                <a class="contact__link" href="">View your lookbook</a>
+                <a class="contact__link" href="">Track an order</a>
+                <a class="contact__link" href="">Update information</a>
+            </div>
+            <div class="contact__container">
+                <h5 class="contact__title">Lookbook</h5>
+                <a class="contact__link" href="">Latest posts</a>
+                <a class="contact__link" href="">Men’s lookbook</a>
+                <a class="contact__link" href="">Women’s lookbook</a>
+                <a class="contact__link" href="">Lookbooks RSS feed</a>
+                <a class="contact__link" href="">View your lookbook</a>
+                <a class="contact__link" href="">Delete your lookbook</a>
+            </div>
+            <address class="contact__container">
+                <h5 class="contact__title">contact details</h5>
+                <p class="contact__text">Head Office: Avenue Fashion, 180-182 Regent Street, London.</p>
+                <p class="contact__text">Telephone: 0123-456-789 </p>
+                <p class="contact__text">Email: support@yourwebsite.com</p>
+            </address>
+        </div>
+        <div class="contact__more-links more-links">
+            <div class="more-links__winner">
+                <div class="sale sale--large">
+                    <a class="sale__link" href="javascript:void(0)"><span class="sale__link--bold">award winner</span> fashion awards 2016</a>
+                </div>
+            </div>
+            <div class="more-links__social">
+                <a class="more-links__link" href=""><svg class="icon">
+                    <use xlink:href="dist/svg/sprites.svg#fb"></use>
+                </svg></a>
+                <a class="more-links__link" href=""><svg class="icon">
+                    <use xlink:href="dist/svg/sprites.svg#twitter"></use>
+                </svg></a>
+                <a class="more-links__link" href=""><svg class="icon">
+                    <use xlink:href="dist/svg/sprites.svg#instagram"></use>
+                </svg></a>
+                <a class="more-links__link" href=""><svg class="icon">
+                    <use xlink:href="dist/svg/sprites.svg#pinterest"></use>
+                </svg></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__designed-when">
+                    <p>© 2016 Avenue Fashion™</p>
+                </div>
+                <div class="footer__designed-by designed-by">
+                    <p class="designed-by__name">Design by RobbyDesigns.com</p>
+                    <p class="designed-by__name">Dev by Loremipsum.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

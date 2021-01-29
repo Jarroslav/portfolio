@@ -1,0 +1,59 @@
+/**/
+/*SLIDER CUSTOM SETTINGS*/
+/**/
+.slick-prev {
+    left: -250px;
+    /*padding: 250px;*/
+}
+.slick-next {
+    right: -250px;
+    /*padding: 250px;*/
+}
+.slick-prev:before {
+    content: '<';
+    font-size: 38px;
+}
+.slick-next:before {
+    content: '>';
+    font-size: 38px;
+}
+.slick-dots {
+    bottom: -60px;
+}
+.slick-dots li button:before {
+    content: '○';
+    font-size: 30px;
+    color: #e9e8ea;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    content: '●';
+    color: #ebebeb;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 105px;
+}
+.team-slider .slick-prev {
+    left: -60px;
+    /*padding: 177px 120px;*/
+}
+.team-slider .slick-next {
+    right: -60px;
+    /*padding: 177px 120px;*/
+}
+.team-slider .slick-prev:before {
+    content: '<';
+    font-size: 38px;
+    color: #665f60;
+}
+.team-slider .slick-next:before {
+    content: '>';
+    font-size: 38px;
+    color: #665f60;
+}
+.team-slider .slick-slide {
+    margin: 0 15px;
+}
+/**/
+/*END - SLIDER CUSTOM SETTINGS*/
+/**/

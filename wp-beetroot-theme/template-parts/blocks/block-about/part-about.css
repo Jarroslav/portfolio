@@ -1,0 +1,88 @@
+/**/
+/** ABOUT */
+/**/
+.about {
+    padding-top: 125px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.about .title {
+    font-family: "Proxima Nova Semibold";
+    font-size: 36px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fefbfc;
+}
+.about__img {
+    max-width: 380px;
+    max-height: 555px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.left-side {
+    display: none;
+    text-align: center;
+    padding: 0 100px;
+}
+.left-side__svg {
+    margin-top: 75px;
+}
+.about__right-side {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.about__right-side--title {
+    display: block;
+    color: #665f60 !important;
+}
+.about__right-side p {
+    font-size: 20px;
+    margin: 0 0 20px;
+    padding: 0;
+    color: #665f60;
+    text-align: left;
+}
+.about .learn-button {
+    align-self: center;
+    padding: 20px 80px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #7d7a7c;
+    border: 1px solid #7d7a7c;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 0;
+    outline: none;
+    transition: ease-out 0.2s;
+}
+.about .learn-button:hover {
+    background-color: #c1bfd9;
+}
+@media (min-width: 768px) {
+    .left-side {
+        display: block;
+    }
+    .about__right-side--title {
+        display: none;
+    }
+    .about__right-side p {
+        padding: 0 0 0 70px;
+    }
+}
+@media (min-width: 992px) {
+    .about__right-side p:first-of-type {
+        margin: 40px 0 0 0;
+        padding: 35px 0 10px 70px;
+    }
+    .about .learn-button {
+        margin-top: 70px;
+    }
+}
+/* For correct display in wp-admin */
+.wp-block {
+    max-width: 1110px;
+}

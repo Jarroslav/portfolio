@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-wrap {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 360px 360px 680px;
+  gap: 30px;
+}
+.top-wrap .item1 {
+  background: url("../img/1.jpg") center center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.top-wrap .item2 {
+  background: url("../img/2.jpg") center center;
+  background-size: cover;
+}
+.top-wrap .item3 {
+  background: url("../img/3.jpg") center center;
+  background-size: cover;
+}
+.top-wrap .item4 {
+  background: url("../img/4.jpg") center center;
+  background-size: cover;
+}
+.top-wrap .item5 {
+  background: url("../img/5.jpg") center center;
+  background-size: cover;
+}
+.top-wrap .item6 {
+  background: url("../img/6.jpg") center center;
+  background-size: cover;
+}
+
+.bot-wrap {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 400px 400px;
+}
+.bot-wrap li {
+  cursor: pointer;
+}
+.bot-wrap li:after {
+  transition: all 0.2s ease-in;
+}
+.bot-wrap li:hover:after {
+  opacity: 1;
+}
+.bot-wrap .item1 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/7.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item2 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/8.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item3 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/9.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item4 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/10.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item5 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/11.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item6 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item6:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/12.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item7 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item7:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/13.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.bot-wrap .item8 {
+  background: #000;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bot-wrap .item8:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/14.png") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */

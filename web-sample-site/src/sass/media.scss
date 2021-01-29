@@ -1,0 +1,363 @@
+@media screen and (min-width: 1200px) {
+  .home__header {
+    backdrop-filter: none;
+  }
+  .product {
+    &__title, &__text {
+      max-width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 1774px) {
+  html {
+    font-size: 13px;
+  }
+  .gallery__nav, .grid {
+    margin: 0 20px;
+  }
+  .divider {
+    margin: 50px 20px;
+  }
+}
+@media screen and (max-width: 1504px) {
+  html {
+    font-size: 11px;
+  }
+  .grid .description {
+    bottom: -189px;
+  }
+  .grid .description--big {
+    bottom: -137px;
+  }
+}
+@media screen and (max-width: 1345px) {
+  .grid .description--big {
+    bottom: -156px;
+  }
+}
+@media screen and (max-width: 1284px) {
+  .grid .description {
+    bottom: -203px;
+  }
+  .grid .description--big {
+    bottom: -156px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .home__header {
+    backdrop-filter: blur(8px);
+  }
+  .grid {
+    margin: 0 20px;
+  }
+  .sale--large {
+    .sale__link {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1012px) {
+  .grid .description {
+    bottom: -221px;
+  }
+  .grid .description--big {
+    bottom: -156px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home__header {
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    font-size: 12px;
+    .logo {
+      display: none;
+    }
+  }
+  .nav {
+    margin: 0 30px;
+    &__item {
+      margin-right: 20px;
+    }
+    .search-container {
+      margin-left: 20px;
+    }
+  }
+  .btn-container {
+    &__position {
+      justify-content: center;
+    }
+    .btn {
+      margin: 0;
+    }
+  }
+  .gallery__nav .nav {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__link {
+      margin: 5px auto;
+      line-height: 30px;
+    }
+  }
+  .grid {
+    grid-template-rows: repeat(5, 150px);
+  }
+  .product {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      width: 100%;
+      padding: 30px 50px;
+      margin: 10px;
+    }
+    .middle {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 904px) {
+  .grid .description {
+    bottom: -236px;
+  }
+  .grid .description--big {
+    bottom: -171px;
+  }
+}
+@media screen and (max-width: 848px) {
+  .grid .description {
+    bottom: -252px;
+  }
+  .grid .description--big {
+    bottom: -171px;
+  }
+}
+@media screen and (max-width: 823px) {
+  .grid .description {
+    bottom: -270px;
+  }
+  .grid .description--big {
+    bottom: -171px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mens__content {
+    width: 420px;
+    height: 510px;
+    .nav__list {
+      padding: 20px;
+    }
+  }
+  .grid .description, .grid .description--big  {
+    bottom: -171px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 250px);
+    grid-template-areas:
+            "item1 item2 "
+            "item1 item2 "
+            "item3 item4 "
+            "item3 item4 "
+            "item5 item6 "
+            "item5 item6 "
+  ;
+  }
+  .contact__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__container {
+   text-align: center;
+  }
+  .contact__link {
+    margin: 0 auto;
+  }
+  .more-links {
+    flex-direction: column;
+    padding: 0;
+    .sale {
+      width: 100%;
+    }
+    &__winner, &__social {
+      width: 100%;
+      margin: 0;
+    }
+    &__social {
+      height: 70px;
+    }
+  }
+}
+@media screen and (max-width: 712px) {
+  .mens__clothes {
+    .nav__link {
+      font-size: 11px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .home__header {
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    font-size: 12px;
+    .logo {
+      display: none;
+    }
+  }
+  .nav {
+    flex-direction: column-reverse;
+    margin: 0 30px;
+    &__item {
+      margin-right: 20px;
+    }
+    .search-container {
+      margin: 0;
+      &__input {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 42px;
+        padding: 0;
+      }
+      &__button {
+        height: 42px;
+        padding: 10px 20px;
+        top: 0;
+      }
+    }
+  }
+  .btn {
+    width: 200px;
+    &__link {
+      font-size: 10px;
+      padding: 22px 5px;
+    }
+  }
+  .mens__clothes {
+    display: flex;
+    margin: 0;
+  }
+  .mens__content {
+    max-width: 420px;
+    max-height: 510px;
+    .nav__list {
+      padding: 0;
+    }
+  }
+  .home__btn {
+    display: flex;
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 200px);
+    grid-template-areas:
+            "item1 "
+            "item1 "
+            "item2 "
+            "item2 "
+            "item3 "
+            "item3 "
+            "item4 "
+            "item4 "
+            "item5 "
+            "item5 "
+            "item6 "
+            "item6 "
+  ;
+  }
+  .grid .description, .grid .description--big  {
+    bottom: -156px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .navbar__currency-select {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .home__header {
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    font-size: 12px;
+    .logo {
+      display: none;
+    }
+  }
+  .nav {
+    flex-direction: column-reverse;
+    margin: 0 30px;
+    &__item {
+      margin-right: 20px;
+    }
+    .search-container {
+      margin: 0;
+      &__input {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 42px;
+        padding: 0;
+      }
+      &__button {
+        height: 42px;
+        padding: 10px 20px;
+        top: 0;
+      }
+    }
+  }
+  .mens__content {
+    .sale {
+      max-width: 300px;
+      height: 150px;
+      &__link {
+        font-size: 16px;
+      }
+    }
+  }
+  .mens__clothes {
+    padding-top: 20px 0;
+    .formal {
+      top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 482px) {
+  .mens__content {
+    width: 340px;
+    height: 420px;
+  }
+  .footer__designed-when {
+    display: flex;
+   align-items: center;
+  }
+  .designed-by {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 361px){
+  .navbar {
+    display: flex;
+  }
+}
+@media screen and (max-width: 360px){
+  .navbar {
+    flex-direction: column;
+  }
+  .nav {
+    margin: 0 30px;
+    &__item {
+      margin-right: 20px;
+    }
+    .search-container {
+      width: 87%;
+      margin-left: 20px;
+    }
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__designed-when {
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin top-bot-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@mixin container {
+  max-width: 1770px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@mixin cover-100-absolute-content {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+@mixin cover-relative {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+@mixin cover-before {
+  @include cover-100-absolute-content;
+  background: #00000053;
+}
+@mixin description {
+  display: none;
+  position: absolute;
+  bottom: -170px;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  font-size: 16px;
+}

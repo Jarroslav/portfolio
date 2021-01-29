@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Yaroslav Krivushenko" />
+    <link rel="icon" type="image/png" href="https://cdn.frankerfacez.com/emoticon/162146/1"/>
+    <link rel="stylesheet" href="dist/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/bootstrap-grid.css">
+    <link rel="stylesheet" href="dist/slick.css">
+    <link rel="stylesheet" href="dist/slick-theme.css">
+    <link rel="stylesheet" href="dist/custom-slick-theme.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/sprite-style.css">
+    <link rel="stylesheet" href="dist/mobile-menu.css">
+    <link rel="stylesheet" href="dist/navbarScroll.css">
+    <link rel="stylesheet" href="dist/fadeInOutButtons.css">
+    <link rel="stylesheet" href="dist/responsive.css">
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKroTMWIT7zuBNgdLOxDGjnZfUeV7c4Lw&callback=initMap">
+    </script>
+    <title>Creative digital project</title>
+</head>
+<body>
+    <header id="home" class="container-fluid header page-section" style="background-image: url(src/img/header-bg.png);">
+        <div class="header__top">
+            <div class="header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="72px">
+                    <path fill-rule="evenodd" class="logo-svg"
+                          d="M29.714,52.981 C29.206,58.539 28.174,63.426 26.295,67.698 C25.672,69.114 24.539,70.465 24.016,72.000
+                          C23.940,72.000 23.864,72.000 23.788,72.000 C23.788,71.622 23.788,71.245 23.788,70.868 C24.216,70.203
+                          24.007,69.293 24.244,68.377 C25.372,64.020 25.457,58.207 23.560,54.566 C20.320,48.345 13.832,50.438
+                          7.379,47.773 C4.851,46.730 2.994,44.583 1.681,42.339 C1.225,41.057 0.769,39.773 0.313,38.490
+                          C-0.403,35.785 0.251,32.291 0.997,30.339 C4.104,22.208 11.869,18.630 21.281,23.094 C21.281,22.868
+                          21.281,22.641 21.281,22.415 C20.474,21.319 20.736,19.682 20.369,18.113 C19.384,13.894 18.625,0.046
+                          23.332,-0.000 C24.609,0.926 27.063,0.885 27.207,2.943 C26.831,3.348 26.809,3.512 26.751,4.302
+                          C26.827,4.302 26.903,4.302 26.979,4.302 C26.979,4.226 26.979,4.151 26.979,4.075 C27.960,3.045
+                          28.229,0.705 29.942,0.453 C31.310,1.673 33.625,1.916 34.044,4.075 C32.902,5.521 31.775,8.049
+                          31.309,9.962 C31.461,9.962 31.613,9.962 31.765,9.962 C33.193,8.085 39.077,2.711 41.793,3.169
+                          C42.597,4.461 43.427,5.738 43.844,7.472 C42.409,7.981 41.749,9.367 40.653,10.189 C36.654,13.188
+                          33.422,17.563 30.853,21.962 C31.081,21.962 31.309,21.962 31.537,21.962 C33.106,20.742 39.510,20.151
+                          42.249,20.830 C49.471,22.622 51.501,25.101 53.188,32.377 C53.423,33.388 53.732,35.769 53.416,37.132
+                          C51.233,46.574 46.626,51.341 37.007,53.434 C34.436,53.993 31.873,53.097 29.714,52.981 Z"
+                    />
+                </svg>
+            </div>
+            <nav class="desktop-menu__navbar">
+                <ul class="desktop-menu__list">
+                    <li class="desktop-menu__item"><a href="#home" class="desktop-menu__link active-anchor">home</a></li>
+                    <li class="desktop-menu__item"><a href="#about" class="desktop-menu__link">about</a></li>
+                    <li class="desktop-menu__item"><a href="#services" class="desktop-menu__link">services</a></li>
+                    <li class="desktop-menu__item"><a href="#works" class="desktop-menu__link">works</a></li>
+                    <li class="desktop-menu__item"><a href="#contact" class="desktop-menu__link">contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu__hamburger">
+                <span class="mobile-menu__span"></span>
+            </div>
+            <nav class="mobile-menu__navbar">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link">home</a></li>
+                    <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">about</a></li>
+                    <li class="mobile-menu__item"><a href="#services" class="mobile-menu__link">services</a></li>
+                    <li class="mobile-menu__item"><a href="#works" class="mobile-menu__link">works</a></li>
+                    <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container header__bottom">
+            <h1 class="header__bottom-title">creative digital project</h1>
+            <h3 class="header__bottom-subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3>
+        </div>
+    </header>
+    <main class="main">
+        <button id="up-scroll-btn">˄</button>
+        <section id="about" class="container about page-section">
+            <div class="about__img about__left-side left-side" style="background-image: url(src/img/about-img.png);">
+                <img src="" alt="">
+                <svg class="left-side__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="54px">
+                    <image  x="0px" y="0px" width="50px" height="54px"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA2CAQAAAAvpwIsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxYWIAtZXuiOAAACpUlEQVRYw82Y65GbMBSFj3dSAOmADkwJpIKlBEqgBFIBSQWU4KQCvBWwWwHuQO7gyw9hjI31AI9ncvXHgx5H50j3Ie9QtBXKtFci6VNfOuoUPZOYllBjuLcDedRs7SKYFGqVSDrpj750UqJM78okSb/0U+fnmTQA9Itdp7RjTxJaIwRhF2ocvQUmBsYPUQJQekZkGKDbDpJigDrA1cJUW0G68B4RogKMTzL31ByA1CHjcjvNFpAWaB0y3p9T7ufigkg8PDpguFty8F0QF0gB9A/BD6O/37KsnLw9IPVDlUsGwFAtYDJgWAvSAQey2SIVAwADGRcPOswEBdaC9FMY7Ge/DfV0FuXU39HRAbgCpgvEymFmyx8o7w47m87nYg4QVxRG0k6SlEs6OuNrMkZjqVGmH49HfvME6ERnL4Aknad+T8B/c3w/StMe4yxdDxKY5hjtYO0C+ZC0XwGRS+6c75OrWAHyLt/pOQOkcV/JB20AirXO6IvCy1YCxt3vnpj63OsBj3oLiOXSR0DU2zOjSDARkhXgO48QyGUBH0wes5GYI4WDQwybV4LFRtzNuQ3yF5bdyDMJrRFTC2fqJxf9kCTtlSsZv+0iXDXqitrkdGuG2pcN1zK5ZJdU+Rg0z/rUUfOs47U1IPHf7+wtPOR5iwHJvb1FlBKeltKMhRDOCwEDjaPWDPhJQjndJ0M7q8DmLaOZKpp+Uc14QYrxfWV93RuVxvHX0qh9NH65s2HaWRX25RnzamK+kG8ePq7yNA55Qu1WvuIWZF6rh+WJl28MrBbCcqhXyBOWr74+wIV9qZuNAvnFM/YBsi6Xr23ju9PyiHnjbmst0L4pk/T7ZWHrr6R8B5K+R/wJs9WQLEhMdnsC5L8J9U+bfWl1rwWxZ/Ji25G/HuQfRzexr77avTsAAAAASUVORK5CYII="
+                    />
+                </svg>
+                <h2 class="title">about us</h2>
+            </div>
+            <div class="about__right-side">
+                <h2 class="title about__right-side--title">about us</h2>
+                <p class="about__description">
+                    Nullam quis risus eget urna <strong>mollis ornare</strong> vel eu leo. Donec id elit non mi porta gravida
+                    at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus
+                    vel augue laoreet rutrum faucibus dolor auctor.
+                    <br><br>
+                    <strong>Morbi leo risus</strong>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem
+                    lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis
+                    consectetur purus sit amet <em>fermentum</em>. Sed posuere consectetur est at lobortis.
+                </p>
+                <button class="learn-button">learn more</button>
+            </div>
+        </section>
+        <section id="services" class="container services page-section">
+            <div class="services__graph-des">
+                <div class="services__item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="47px" height="61px">
+                        <image
+                                x="0px" y="0px" width="47px" height="61px"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA9CAMAAAAK58AOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC2VBMVEVkX2BkYGBkYGFjX2BkYGBkYGBkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkYGFkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkYGFkX2BkX2BkX2BkYGFkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGFkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGBkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGBkYGBkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGFkYGFkYGBkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGFkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGFkX2BkYGBkYGBkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkYGBkX2BkYGBkYGBkYGFkYGFkYGBkX2BkX2BkX2BkYGBkX2BkX2BkYGBkYGFkX2BkYGFkYGFkX2BkYGBkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkYGFkX2BkYGBkYGFkYGBkX2BkX2BkX2BkYGBkX2BkYGFkX2BkX2BkYGFkYGFkX2BkX2BkYGBkYGH///9yVCa6AAAA73RSTlMAAAAAcrrAv8WWFANxbx4B0ypQ6p8hYTtALuDJ6DAs1Xz6uOHp1W37ogvGvRfTZiNGcrq/ufT2JIuvxELnZQYz694dO0FA4AjMoRLdKNX51yiPrDkCc7d1CdqgItMsxirp7SDfgQ0YLiqohAyar5zlXl/uYgeVBF2+GXKrhq0RgPilE+Znr2Ds0BuI9fDcH+g82Z4w4f1niVH82E/yX4bCx0hd8h9bzyfbtgxe8hiUzhXiZ9JOe/2wFMlXTzZB6sS74sq9u9epFkC+gxE897w11q4lLH00UryCN8qYQwVZJMs6DpFF5sG+yIMaSwk4RDjOGlkAAAABYktHRPLbto54AAAAB3RJTUUH5AsWFjU6PzUOoAAABNNJREFUSMd1VolfFVUUPvdWb+pRwksUUCrUnqhhi8qjEB9hLxdQqSRKjRRoMdOkIoLKNC3NMoKy5ZUWrZpFZCXtWbbYRqvZatm+d2b+g+46c+9A9wfzZs5899zvfme5A0CA//FB2f+BB0UcPQ4+JCrsGYceNiiTwxTOHFnoDxfdGDeRwwe7mD2EUh9E5RKUcPzQnFw58oZhTL4fzmbnHxE4Jab/I9UzoUdpfMGIkaPco/PAnkE0Xi8c53huHV04Zuw4PKYIIOCkbscL/yTA8xnD3WPpcaPweHur2j+beMKEiDNxUjHDc2NBorAE4EQ8KUohPAR/KBXycH0YYnIZTkkClJ9cMbX/AhJfdEoq99S8aRgjFKbPcGdWMluyCmeBtQM+Q+LlmC34FMypGiQeq/E0dj39jLk1/fgQOHNCRPAHqMWzzhZ6zBP+0cP5C4KYnYN1YslzRYgXCpXmUv66fFF9A3ts5Pbzzrf9A1yQk7pwGC5mdxfhkou5ZSkuizKXDl4yo9Bd3jRdBmG88u/rTy+9DC9vJoSpJPTPxitarqxCbG0TpGR8r2L6O4w/9w9XF2LFNSsSXva1/GnlqutWQ2oN4vVJW38+RHxrZbbeEBUO1667cf1NN+MGvKUdxH6F/jkpmZ8E6ORbsaMTb7s9Q5LM3Zg/+A6cP7YU70wqPmDyZ8l8191l6RKdMA33IK65twWaNjW2B/lJffzmDenofe6YSqqT/n502vh9l8d3IPONTaBAZnsx7n7l6k58QHAXbx6UjqHpocaHA/1lfBfybKh8pPjR9UbOdDFpxAJcoiyvjvEkME6IsiVzK06Bx3DJNiPlH9cLPMF+BX9m7hbx7X4Se55q2I5brDzuwqeTfC77hWdU/TIhWX4+u5Ux35GOdFt4KQ3lv809Xh3V5RzH0t7nnocXvBczTDiVzPlC7kvztP6U5z96L8Mrr6ZLqGoh8jp6GubvbHWc15bj63Nw1xuqvTF93ETXm2/1rnt7t1VUQU/zMDyExY1ZTcToaQOMd2Sfo0HlZrmSM9Gtlxhqi7xYbBW6jqlu07qXKhuNu7vejdS+155p+Q+aergrxdVest9XeI/HdIDmLmZSht/8QcfQFX34YZHm4wsc+CYyTSmPW4ybP/rY/YRXvFEjMpXBWooS1Xfh0+2y5LPwM2OHIvWJOk3E1T8H9vQu0/zlAQO+rvZ+Ff7zRfWmnmCcfYIV8fHSBWuJAZ5qOWR2BmvQuBc7QN5WC7zsIYQYeyVmFHz/uzeizDeDjxV561wC2Lupx+JPAxAPBA34S/sX+KWBpxppyEN8PVmB7kmMWKD1758NVNMhUv+vRqZxb4ulDwgNiY5asN+vWycVs8qRcHnmmilmaMkjEudnpVf/zRBdX6xHGYOEts7zs+PbWftArU0ZH7P8/aTQJSjrK3ht9nBqLhLW38LTgUpLGOLqu0DP53g7J/0HYTb8q2+MupD8RiqxQvW/a5Tiofoyav7/+VOzYEJB9vFEetL9yphCzCLm+Ww62YnfZdhqWhErL+v93lp0x6qKdlMWYk0lSz2n2wpl8353/w814QUU4sefEvhzpiYpR+oXxM5fec+f6Njjt9/7XPxjW1iEP2f2WU3fM86C6r/20fDeAP7+JzVg8/+3rUZEWfP/D8498or3fboCAAAAAElFTkSuQmCC"
+                        />
+                    </svg>
+                    <h3 class="services__item-title">graphic design</h3>
+                    <p class="services__item-text">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+            <div class="services__web-dev">
+                <div class="services__item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="58px" height="59px">
+                        <image  x="0px" y="0px" width="58px" height="59px"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAMAAAAdOWm/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEVkYGFkX2BkYGBjX2BkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkYGFkX2BkYGFkYGFkX2BkX2BkYGFkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkYGBkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGBkYGBkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGBkYGFkYGFkYGBkYGBkX2BkX2BkYGFkX2BkYGBkX2BkX2BkYGFkYGFkYGBkYGFkYGFkYGFkYGFkYGBkYGBkX2BkX2BkX2BkX2BkX2BkYGFkYGD////nh5uoAAAAYXRSTlMAAAAAj7y/v8KcDIe9wJQW9FM+QDTt9EdAOvkZ6Ar3GejEv/z3GVA/QDn2CsW+u/nB/d/+8BPU5hA7M1I+QxUBDvhHQRIX9RfoCvUX9Z++wawNl6Q0FvfEvTn5vf4T1AEON4j1ygAAAAFiS0dEZMLauAkAAAAHdElNRQfkCxYWORhG4ABIAAADkklEQVRIx41XCVsTMRCdHXXrUQRZqSCgFRGQoqJ4K6iA5RTv+8zu//8PZnLOZLfVfECzaV7mepl9wPETed7K8/zkqdOQZRliFkcyN9+daedmjJwFFcao3YFhp/4A8FBwC2Nhv4aeGy+K4vyEhbpdDWbdc0ddmJwsiqmLBJ02izMRahBYP8isdtSsmV0i6GUz7aor+ZyJwvxttXI2WvRj1ttXHXSeoNcctFT0oyoTSBVzoOcle+LQaeNIt1pY1DEMGkvu8/qy6lEQoKFVOW0C6/pYk9jSpzFudeWGjuHmLZamAfk1B3fUKuWjfVvBnTWKRId29x75ERDWOELiRnZ/zYX8AB4+Kh5PqCdP1zeeBTuYGI6Fguz5+OTUC7VZbG2bI7vlSyAecQ9BTgRN+iZeWoKu2hkWX5IBICg4agZoAkQXfbSJ3io6fjOrA5Isz+yXs/5QD6VgAROgtwguT4gQYyUopFSQJXE1crsYdJesIrhHbxaEUWSzAEV94XYaDSZVDX2gr/aYw/VsSI/F2BexMmjEAwRDMsMENQGih4Zkpp6m0NJDHZvQxjmUT+Cge+AM7FqryBpgGi7jtyZiZSmhF7vlDncxFLFOTPsrKHEwLLOQJE9CmziMfmdS5wwPLf3DzZH3GwYdRJ/7lWeTjbXezoLZ9CDmsCOiSXhjL/MbXcMKUHDFweRdA8AvALKQCAquwVQ8TVA3jHwZoF/1AJjDaWL8/YMaJ/5RHOafvAOItUsnKSR4B9kxeSi1NRRpSt83kZxJvxJWDzLeXMRLAxhGxoomTQfmHgzv38ChzkXUbEoPboREaM8rFA/9j2GbqeUwRTQjKJEad40DgbGp51Jv0sRZiE3GMOSugRLggS7PILHx9P3kxSEaAXo+sbdrPIqsInu/1voQ8lILuXioKQGyNzUURxICo9Ua/aGhJ9TxHoqYNQkCbGik/tI66Ks2aaaVo9dv3trvhGuiUMb4uyOtmcrVfOQ9RDWYSi5obI2d0gtIq4eXig8T5ahQDuH2CMdJ1G6SViQ9XFo9rOP9WEsMv4LBqtOIn5wyNfLyc1S/c1YDc0HsHr8wPVxZq7Ab5a9Qv6k4VoZJGc6XXsBrqwuLRVFTxKTz+erXZdODmZTOYKYuaiMJWI06Qg8fkR7+FqGJRGOFBoKuUia+kx7+QbGQHv6JooU2EJEY8ov0cOn1sNH16xu/06pgegbN/4zb/wW2tv8CPRy+DUUQVdAAAAAASUVORK5CYII="
+                        />
+                    </svg>
+                    <h3 class="services__item-title">web development</h3>
+                    <p class="services__item-text">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+            <div class="services__services" style="background-image: url(src/img/services-img.png);">
+                <div class="services__item services__item--white">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="62px" height="60px">
+                        <image  x="0px" y="0px" width="62px" height="60px"
+                                xlink:href="data:img/png;base64,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"
+                        />
+                    </svg>
+                    <h2 class="title">our services</h2>
+                    <blockquote class="services__item-blockquote">
+                        “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit
+                        libero, a pharetra augue.”
+                    </blockquote>
+                    <p class="services__item-blockquote-author">- borat -</p>
+                </div>
+            </div>
+            <div class="services__mark">
+                <div class="services__item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="50px" height="61px">
+                        <image  x="0px" y="0px" width="50px" height="61px"
+                                xlink:href="data:img/png;base64,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"
+                        />
+                    </svg>
+                    <h3 class="services__item-title">seo & marketing</h3>
+                    <p class="services__item-text">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+            <div class="services__mob-dev">
+                <div class="services__item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="36px" height="61px">
+                        <image
+                                x="0px" y="0px" width="36px" height="61px"
+                                xlink:href="data:img/png;base64,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"
+                        />
+                    </svg>
+                    <h3 class="services__item-title">mobile development</h3>
+                    <p class="services__item-text">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="container-fluid works page-section" style="background-image: url(src/img/works-bg.png);">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="40px" height="60px">
+                <image  x="0px" y="0px" width="40px" height="60px"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8CAQAAAC+sDBrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxcRGxRVF3ujAAACaUlEQVRYw6WYXbHjMAxGNUVgCIFQCGFwC8EQymDDoBC6i+DOIsgsgkAIhMwiOPvQJP6TFSebvLS2fCz7k2S3gqzvxPVn2ilyk+3p5Prjos872wMLXZir8Z0BH77HXSPwfRLngTluiTvvAPT/418KFF75fGf9y4GOBRiu+5cDz0njtfWUZu3SKP5pwFZpvL7fmumrOUN8OfqmxP3f5gzRsquYo2MBHk1LVuQrDb+BsUkUVb7cqAfg3gTsoFyLFgqv5sAegBlXBw7AkhqYr2POM6uUwzfjBOEBEEtzTY5cmlEDnpHDkOZYDseTEYCR57E0R3Lcs8NrUiWLnLHlcEzAgsfh8CwVZLRdthx5nH0KsLbwnWDLMRV++/QULkNuG6ZnB5At0AFUpVlwwtPIDm1wDbhK8wnMp2HySFpqSxbWrLnJHxH5qhTQXyLyii4aTn6IyO+K9ZeI/Nx2pVfndGugPFYP5rK6ZBnTC8LbyOE7SxLYSzU5V0pgdxVDx8AMwMxQLW37OgP9XTE90jYEzR7YRz4eAz973QfgJ3jel4FDOPS3pl7Jilagi0tLaB7Ne5cFfMaXktDcmweUBUwuTXnHcBqYXZryruU0cE5rgeF8E9DnG2W63wA0D3pBqke9DlSENEK0AaiEmh6kfRNQTYZy1j3ND4FqupZAveCWwLteUDTltIJbAislTwNqxSwHVgueBtRmz4HVkqwDy/lTYFc/2HRgqWAKNI61GjCPsRhYi1UTmGdBDBwwrs51YJqnAWj6ZwHTShKAtWxvAMYFdwO6o58eFjAuuBvQc/CvhA30aI+/DtT+wJrsEf8AVQ6UhE4ObNgAAAAASUVORK5CYII="
+                />
+            </svg>
+            <h2 class="title">recent works</h2>
+            <div class="works-slider">
+                <img src="src/img/slider-img.png" alt="">
+                <img src="src/img/slider-img.png" alt="">
+                <img src="src/img/slider-img.png" alt="">
+                <img src="src/img/slider-img.png" alt="">
+                <img src="src/img/slider-img.png" alt="">
+            </div>
+            <button class="learn-button learn-button--white">view gallery</button>
+        </section>
+        <section class="team container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="60px" height="60px">
+                <image  x="0px" y="0px" width="60px" height="60px"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAkFBMVEVkX2BkYGBkYGFjX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGFkYGFkYGBkYGFkYGFkYGBkYGBkYGFkYGFkYGBkYGBkYGBkYGFkYGBkYGBkYGFkYGBkYGBkYGFkYGFkYGBkX2BkYGH///+OW/1TAAAALHRSTlMAAAAAQI+/7yC/MO+fUM8Qz6/fcIBgnxBgrzCfIECvv99wEN/vj1BAYIBQgA01ysYAAAABYktHRC8j1CARAAAAB3RJTUUH5AsZCzAc3NJfbQAABDpJREFUSMeFVwl7piYQFopAjEpV2Bzdbbrdbno5/v+f1xkuAc2W54sHMtfLzDuk61hHPxoc/1h87jrRy13JXsRXVn67HSzqYZ1+AIDjwIvUQS994T8W5+E2KHgcJ62nEUANyTReOK+t8cq0/0PZWQdFeg7SrNLPW3P+GuKaYTYpUPMzyEt0pyDP73F2AmXwOarXCkR3FWe1A3ks0JcGehgZLeQxxgo13ujsVhhKDASstcd3mOc5gFoxAM9vAVIeESqMswjAKcxulJ1ZVbhwYqbIbc6T/gFUEMQp1uQZrx84AbaVei0sXZsMHw8Hq4nJgxejdvehYA4/a2crfEpLeTcWYH8IcqFUAIxPQZvB7A45QsGWlVFCHe8ECuMOYHVYTtqtAM9tJjSJxVO+p/kJhXDsqESwVArJbLDPr9rSArM97FjO0pmrwaoQwiM7vbgH5fZjW513tcL+b3u7mCH12MNlSSt44eRl7EmAxpHuO7QB3HjPzhJiAaRLbdxFTGlPK2HP6BbBo3DxVhYHj4noJw8odyImwBNA4/ItK2Bei1NnGgLmPFNbrYds6Y55YcnbJAmos2piBJtX5OU2UGJuTFX78CGHBNzSlpY6X2C7S50acfy97sq0n80Buqz5sn1EeKOGFRyLe5eqx8Hc5ievZNMk24iEKsTMCs+5bHy980JDFQ8u/aUG7NP+AyJqdkbsMGanUEckIsYudjKHhF7gFyAJSUH7+hNt8QzgMkiMlZGytlfR/KR2TKnYbUFNDdkVMd00HE6cGT4hjxbwJbuE2g/qk4SrvpXKhZevl/FZOHEKhfsXJ54az1sdbHB4fkLiUMQJgW3goC+KyEX2bri3h/y+KE85Si5T6TapcL++KeIiUEvBxWk4SXK/LV+FIdjY6faevDVfthffChZXMrWxZHPehrjfAzaa/Shj1tFfPmwzRvBof4/vnFrLanWwMPVvQM08kVYQRp9lPwVjGk0d38Lesx4O5YJrevyDyHbtoxBL55F+9TiOOgaJSfSdRHqA7/HEZr3gRFEzRDlZ9gbNe08B2xgoJhFa+DNkLq1A2YfMX2fLyEXAhTySNOW/wO5i08Y/FgWAlLCHvjGXG4MHjpSWdFIBMOnLsU+X7IkFxKPIX+FgRBtl8NELh/AQud60JFXlEa1IBWUwoDkcm2jGLDtlgM4VwMsDi3YvGMRIhceC25ICH/ISIakxKmk3Ic4iEGKzbz51A548AuZ8P062Sf8mY4c9zgZ9+Kvc9LnuK3iqMi9EOiWkw/Pfi5yjJArOcrFnPbHoYaC5bsN8ke83B6RmIh05qIjUlphbjz73przkOjL9vY8U/aiLb9r6YpP2H92sL1qgnqynivVfnV2L/9G89t98kI8Po3VC5N1HVIRwdgx4Y+6/tlwaiw1ZKMG8n9eMO/LQ5+7iWZVGwtpFyvI0JRHuTej6zIfjP13ZY/KfF2nxAAAAAElFTkSuQmCC"
+                />
+            </svg>
+            <h2 class="title title--dark">meet our team</h2>
+            <div class="container team-slider">
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-guy.png" alt="team guy">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">miguel obrain</h4>
+                    <p class="team-slider__subtitle">CEO & Founder</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item"><a href="#linkedin" >
+                            <svg class="social-networks-logo">
+                                <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                            </svg>
+                        </a></li>
+                        <li class="team-slider__item"><a href="#g-plus" >
+                            <svg class="social-networks-logo">
+                                <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                            </svg>
+                        </a></li>
+                        <li class="team-slider__item"><a href="#facebook" >
+                            <svg class="social-networks-logo">
+                                <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                            </svg>
+                        </a></li>
+                        <li class="team-slider__item"><a href="#twitter" >
+                            <svg class="social-networks-logo">
+                                <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-red-head.png" alt="team girl">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">jackie carroll</h4>
+                    <p class="team-slider__subtitle">Art Director</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item">
+                            <a href="#behance" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#linkedin" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#g-plus" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#facebook" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#twitter" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-nat-blond.png" alt="team girl">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">ida morrison</h4>
+                    <p class="team-slider__subtitle">Designer</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item">
+                            <a href="#behance" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#linkedin" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#g-plus" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#facebook" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#twitter" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-guy.png" alt="team guy">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">miguel obrain</h4>
+                    <p class="team-slider__subtitle">CEO & Founder</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item">
+                            <a href="#behance" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#linkedin" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#g-plus" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#facebook" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#twitter" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-red-head.png" alt="team girl">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">jackie carroll</h4>
+                    <p class="team-slider__subtitle">Art Director</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item">
+                            <a href="#behance" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#linkedin" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#g-plus" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#facebook" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#twitter" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-slider__container">
+                    <div class="team-slider__top-bg"></div>
+                    <div class="team-slider__img-container">
+                        <img class="team-slider__img" src="src/img/team-nat-blond.png" alt="team girl">
+                    </div>
+                    <h4 class="services__item-title services__item-title--lilac-color">ida morrison</h4>
+                    <p class="team-slider__subtitle">Designer</p>
+                    <ul class="team-slider__links">
+                        <li class="team-slider__item">
+                            <a href="#behance" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#linkedin" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#g-plus" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#facebook" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-slider__item">
+                            <a href="#twitter" >
+                                <svg class="social-networks-logo">
+                                    <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="map-form page-section">
+            <div class="right-buttons">
+                <div class="our-address">
+                    <div class="our-address__img">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="38px" height="36px">
+                            <image  x="0px" y="0px" width="38px" height="36px"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAkCAQAAABP/IAuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxsLNSwtdVMPAAACVklEQVRIx+3Wz0sUYRjA8e/q/jQ3JehQNy/d6tTVrokgiopChhLRoYKgS/+AN48WRtISol4U1A5B9y5Klwi6FFLQH9CPlV3XSb8d3GZ/uM3u2rV3Ts8z73z2mXnfmWdj0nRkWSTgPvlmE+NNqV6WuAb0MMN3zvOICxwBEGOfLV61jp1liX5GgE2WmKKI9HKEQMBNitUYRh0ZX/rD6yJe94dbpsWECePGTfnWx9Xzo6huN/zpYBgP+tMNu8K4023nW8OyrvnNgZrcgN9cM1uOEu60hqVdM19VVaW6vGum28HSrrvncMNzw+65Xn52H3zWDOty9a/UH27VLmM+92E0lnbZPYciV3nIPZdN22UmCku5YsGxSApxzIIrdtRmT1ZVcLwphThuweXyUjTAUuYsONoShThqwZypRljSnEUnWqYQJyyaM1mPxc1Z8kZbFOINS+aMV2NJF913sm0KcdJ9F4+rO35WC5acOhWFOGXJBVOC3T41cObUFOKMgU/txk0Dp0XsrfoitHqcsUfEaQO38Em5qpTL3mkbu+uL8mredr6SzvjRubaxOT9V7qej6qNbJGjeXepGQIGwJ0X1gCSXyNbl8nzk4DTd6SIr9JEnFraLLJ8Z4ctpsDjnmOUNqXJcop8HUVdEYfKLbXaqMgnuEdG1O4gemYiobayt8R/7NyzGYc25oME2sO6VOwy3NLX77Ig4nSTCaWlidZzESJOgM/y5ePm/2gnsgFtcJRliWfrqaj2kjxXyIXbAZb42wgLmuUKqqpZDXrNbg+0yy5mQghjveF+58d8qkj5kcw9aDwAAAABJRU5ErkJggg=="
+                            />
+                        </svg>
+                    </div>
+                    <div class="our-address__text">
+                        Ikan Piranha Atas 220C <br>
+                        Malang - East Java <br>
+                        Indonesia
+                    </div>
+                </div>
+                <div class="call-us">
+                    <div class="call-us__img">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="20px" height="34px">
+                            <image  x="0px" y="0px" width="20px" height="34px"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiCAQAAAD1ozE2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxsMAQJPxruyAAABSUlEQVQ4y+3UsUvVURjG8c+591R6bXMIbFDCCAopCGwI/AcE94IGsUFobmxq8y8IioZoaoySoMUlCCEEN1EcktwEJS/3dtX7Ntxf8fupeYdWnzOcc57zhfc5HM6bgsfmDQqnq2bHS2+yJxY8tyr/Azxwzwt1sRXzoc94GuspfrptE0x55KBS9LVlcN1KduRXcbCnJf3NmnTsF+umw4wHtos0S8fy3XQHjJBi1w9NNThx8wS6hlxNseu+tQI8XV03fMloO3S22tRQ1091Z5Y89kDn4Dn4P2C7L9Um467hPuBY73Pta5UidDUxVHEGXc54aKNkN8zhlVYJHPc+43vxr3taMKOm41nJuyhlWaOSZ8KW7FbFG9YVX+NdpSFdi8/xMa6UnEuxGJ9STPhgzzedoi/8mS8U+RomDZhOwYhZo8UxvcZS3m14a/s3sYB7TtW/dKUAAAAASUVORK5CYII="
+                            />
+                        </svg>
+                    </div>
+                    <div class="call-us__text">
+                        <a class="call-us__link" href="tel:+0123456789">(012) 345 67 89</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="map"></div>
+            <div class="get-in-touch">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="42px" height="60px">
+                    <image  x="0px" y="0px" width="42px" height="60px"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA8CAQAAAC6ReBWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxkSAyL6L78JAAAC20lEQVRYw7WY3ZWbMBBGP7sCSiAVhA5CB0sHoYN1Ce6AEtgOOKmA7cBOBd4OcAc3DxJrfmZkbJ9IT0ajKzTzzUh4h5KtUKmfypWpkHTWVV/6q0+dk7Pwek7DgNcuNOTeXA/YxckDHQdKSoQoKTnQfS/W2mALeYxTOip3H9X3ssf70JwTAL2/uYltD8BpaTs3KxiAIfGG6zcOMwoPGpCnDe+43tsMu0ZmDyGFyJbY+cAzSGP2+LgBhieRwQkD0EyhBcAD4bFDBgQXhAc90L2EFKID+hFaAiRiXtJERfY0MbdsF8R3FaIFWtewX+W9nxiRJMQw+mLVx2RoqcjJqWhjRfDsYUDBwZcEcpkMhtgn/QKUoXw0pkHvKDeosncdcAxTa0cinnKDKq2Q1UC/Vybpy6jeb5I+dDUr+5c+JP02R6RMAK53bL+NMrQjAexA0s48Z+zn98aR9voPba+rpNwYuUoq3HlFtFi2XNJ1r7MD/ZRUutAqWliLnQP0zRj+I+ldmYnM9B4tlu2XpHPQ48mNv10TWjf2J6ASmVujyni2zxMgi/lvST/UKY118GiuW8fbSB0Xzam5gJODIeW7AK3dzYgyQuZXHq+mXsL5EX4MicMko57U1J7aPclCtdAIPbpV55Hej26cOrh4CVncAj4VSfsSdEKYiyF/Gjmbb6702ntOoa/4tZjvc7nacxro57tc+6V8GLm6jMyHG7e4pPppeR7PhzMGN6+9Xq9P3aXJ8cErZXiNw/zp2uziXi6s3ljFyHP7NmkVdmgt026ztJx7rWWaW34y+gEYrNS2zbeEK/OXTmkvfWHvfE2nQ1C5yCoVzntisV0Qtn705qZ85iu2TSyYhI6KLTc/3wS1XZBNv+2egQYXzFXQpbd+Hzpu9aaCaksS34POE+FO1LdDNfnA6bcV8S3QIibkIfFR9jA0lI7QDlvst0EV/zDa+Pm+u/O33O1CfpH0w/lYW7R/tCICVSHGLJMAAAAASUVORK5CYII="
+                    />
+                </svg>
+                <h2 class="title map-form__title">get in touch</h2>
+                <form id="contact"  class="contact-form">
+                    <div class="contact-form__inner-container">
+                        <input class="contact-form__name" type="text" placeholder="Your Name *">
+                        <input class="contact-form__email" type="text" placeholder="Your Email *">
+                    </div>
+                    <textarea class="contact-form__text-area" name="" id="" cols="30" rows="9" placeholder="Your Message *"></textarea>
+                    <div class="contact-form__button-holder">
+                        <button class="contact-form__button">send message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="all-rights">
+                © 2014 <strong>tulus</strong>driyo. All Rights Reserved.
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#behance" >
+                        <svg class="social-networks-logo">
+                            <use xlink:href="src/img/sprite.svg#behance-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#linkedin" class="footer-links__link">
+                        <svg class="social-networks-logo">
+                            <use xlink:href="src/img/sprite.svg#linkedIn-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#google-plus" class="footer-links__link">
+                        <svg class="social-networks-logo">
+                            <use xlink:href="src/img/sprite.svg#google-plus-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#facebook" class="footer-links__link">
+                        <svg class="social-networks-logo">
+                            <use xlink:href="src/img/sprite.svg#facebook-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#twitter" class="footer-links__link">
+                        <svg class="social-networks-logo">
+                            <use xlink:href="src/img/sprite.svg#twitter-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navbarScroll.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/form-button.js"></script>
+    <script src="js/fadeInOutButtons.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/jump-menu.js"></script>
+</body>
+</html>

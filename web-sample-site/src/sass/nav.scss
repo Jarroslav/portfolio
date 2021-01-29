@@ -1,0 +1,80 @@
+.nav {
+  display: flex;
+  position: relative;
+  &__list {
+    list-style: none;
+    padding: 30px 39px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    color: #575153;
+    font-weight: 700;
+  }
+  &__item {
+    margin-right: 50px;
+    position: relative;
+    cursor: default;
+    .arrow {
+      margin: 9px 0 0 3px;
+    }
+    &:hover {
+      color: #00c8c8;
+    }
+    &:hover .arrow {
+      border-color: #00c8c8;
+    }
+    &:hover .mens__content {
+      display: block;
+    }
+  }
+  .formal {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+  &__item--drop {
+    height: 30px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $second-color;
+    &:hover {
+      color: $base-color;
+    }
+  }
+  .search-container {
+    margin-left: 60px;
+    position: relative;
+    &__input {
+      height: 30px;
+      border: 1px solid lighten($second-color, 20%);
+      background: inherit;
+      &:hover {
+        border-color: $base-color;
+      }
+      &::placeholder {
+        padding-left: 10px;
+      }
+    }
+    &__button {
+      position: absolute;
+      right: 0;
+      background: inherit;
+      height: 100%;
+      border: none;
+      padding: 5px 15px;
+      cursor: pointer;
+      &:hover i {
+        color: $base-color;
+      }
+      i {
+        color: $second-color;
+      }
+    }
+  }
+}
+.nav {
+
+
+}

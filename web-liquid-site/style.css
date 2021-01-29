@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #3399cc;
+    border: 3vh solid #2b81ac;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3vh;
+    color: #fff;
+    margin-left: 20%;
+    width: calc(100% - 50%);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+ul {
+    margin-left: 20%;
+    width: calc(100% - 40%);
+    height: 50vh;
+    font-size: 0;
+    /* position: relative; */
+    /* list-style-position: inside; */
+    /* box-sizing: border-box;
+    
+    transition: all .1s ease-in; */
+    box-sizing: border-box;
+    color: #fff;
+    border: 0.5vh solid white;
+}
+
+li {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    border: 0.5vh solid white;
+    margin: 0;
+    font-size: 2.3vh;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+ul li p:nth-child(even) {
+    color: #ffefcf;
+}
+
+/* .weather:hover .cell:not(:hover) {
+    opacity: 0.3;
+} */
+
+/* код выше делает то же самое, что и код ниже */
+
+ul:hover li {
+    opacity: 0.5;
+}
+
+ul:hover li:hover {
+    opacity: 1;
+}
+
+#Paris, #Belgrade, #Moscow, #TelAviv, #Cair, #NewYork, #NewDelhi, #Tokyo {
+    width: 25%;
+    height: 25%;
+}
+
+#Lisbon, #SanFrancisco {
+    width: 50%;
+    height: 25%;
+}
+
+#Sydney {
+    width: 100%;
+    height: 25%;
+}
+
+.cell>p {
+    /* vertical-align: middle; */
+    margin-block-start: 1em;
+    /* margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+/* colors */
+
+#Paris {
+    background: #33cccc;
+}
+
+#Belgrade {
+    background: #996699;
+}
+
+#Moscow {
+    background: #c24747;
+}
+
+#TelAviv {
+    background: #e2674a;
+}
+
+#Cair {
+    background: #ffcc66;
+}
+
+#NewYork {
+    background: #99cc99;
+}
+
+#NewDelhi {
+    background: #669999;
+}
+
+#SanFrancisco {
+    background: #cc6699;
+}
+
+#Tokyo {
+    background: #339966;
+}
+
+#Sydney {
+    background: #666699;
+}
+
+div p {
+    margin: 3% 20%;
+    color: #fff;
+    font-size: 2.2vh;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}

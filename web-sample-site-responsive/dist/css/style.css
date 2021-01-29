@@ -1,0 +1,132 @@
+@font-face {
+  src: url("../../../fonts/NeueHansKendrick-Regular.ttf");
+  font-family: "Hans Kendrick", sans-serif;
+}
+html {
+  font-size: 14px;
+}
+
+body {
+  background: #e2e7ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hans Kendrick", sans-serif;
+}
+
+@media screen and (max-width: 575px) {
+  .wrap {
+    grid-template-columns: 375px;
+    grid-template-rows: repeat(5, 540px);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+  }
+}
+@media screen and (min-width: 576px) {
+  .wrap {
+    font-size: 0.8rem;
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(3, 520px);
+    grid-template-areas: "item1 item1" "item2 item3" "item4 item5";
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrap {
+    font-size: 1rem;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 540px);
+    grid-template-areas: "item1 item1 item2" "item3 item4 item5";
+  }
+}
+.wrap {
+  padding: 3rem 0 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.wrap div[class*=item] .img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.wrap div[class*=item] .content {
+  padding: 2rem;
+  text-transform: uppercase;
+}
+.wrap div[class*=item] .content p {
+  color: #c4c4c4;
+  font-weight: 500;
+}
+.wrap div[class*=item] .content .author {
+  width: 55px;
+  height: 55px;
+  background: url("../img/boah.png") center center no-repeat;
+  margin-top: 4rem;
+}
+.wrap div[class*=item]:not(:first-child) {
+  background: #fff;
+}
+.wrap .item1 {
+  grid-area: item1;
+  background: linear-gradient(#00000090 0%, #000 50%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.wrap .item1:before {
+  content: "";
+  position: absolute;
+  background: url("../img/vehicle.png") center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+.wrap .item1 h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 0;
+}
+.wrap .item2 {
+  grid-area: item2;
+}
+.wrap .item2 .img {
+  background: url("../img/gurl.png") center center;
+}
+.wrap .item3 {
+  grid-area: item3;
+}
+.wrap .item3 .img {
+  background: url("../img/gurls.png") center center;
+}
+.wrap .item4 {
+  grid-area: item4;
+}
+.wrap .item4 .img {
+  background: url("../img/boots.png") center center;
+}
+.wrap .item5 {
+  grid-area: item5;
+}
+.wrap .item5 .img {
+  background: url("../img/whiteCar.png") center center;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.loading .img {
+  background: url("../img/loading.png") center center no-repeat;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 1rem;
+}
+.loading p {
+  text-transform: uppercase;
+  color: #99a5b0;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

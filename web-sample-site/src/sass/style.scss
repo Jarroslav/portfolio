@@ -1,0 +1,426 @@
+/***********************************
+
+Template Name: Responsive layout
+Author: Yaroslav Krivushenko
+Version: 1.0
+Design and Developed by: Yaroslav Krivushenko
+
+**************************************/
+/*================================================
+            Table of contents
+==================================================
+
+1. IMPORTING STYLES
+2. HEADER
+3. HOME
+4. GALLERY
+5. PRODUCT
+6. CONTACT
+7. FOOTER
+
+*/
+/*================================================
+            1. IMPORTING STYLES
+==================================================
+*/
+
+@import "symbols";
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "btn";
+body {
+  font-size: 13px;
+}
+
+/*================================================
+            2. HEADER
+==================================================
+*/
+
+@import "header";
+
+/*================================================
+            3. HOME
+==================================================
+*/
+
+.home {
+  height: 920px;
+  width: 100%;
+  background: url("../img/home.png");
+  @include cover-relative;
+  &__header {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    .logo {
+      font-size: 18px;
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      &__bold-text {
+        font-weight: 700;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  p {
+    margin: 0;
+  }
+}
+.mens__content {
+  display: none;
+  position: absolute;
+  height: 550px;
+  width: 460px;
+  background: #f8f8f8;
+  -webkit-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+  box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+}
+.btn-container {
+  position: absolute;
+  bottom: 150px;
+  height: 60px;
+  width: 100%;
+  &__position {
+    @include container;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .btn {
+    width: 340px;
+    height: 100%;
+    margin-right: 50px;
+  }
+}
+.sale {
+  width: 405px;
+  height: 200px;
+  background: #333;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  &__link {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    text-decoration: none;
+  }
+  &--large {
+    width: 100%;
+    padding: 100px;
+    font-weight: 300;
+  }
+  &__link--bold {
+    font-weight: 700;
+  }
+}
+
+/*================================================
+            4. GALLERY
+==================================================
+*/
+.divider {
+  @include container;
+  margin: 50px auto 50px;
+  color: $sub-base-color;
+}
+.gallery {
+  @include container;
+ .nav__list {
+   display: flex;
+   margin: -20px 0 30px 0;
+   padding: 0;
+ }
+}
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, 200px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "item1 item2 item3 item3"
+  "item1 item2 item3 item3"
+  "item4 item4 item3 item3"
+  "item4 item4 item5 item6"
+  "item4 item4 item5 item6"
+  ;
+  gap: 30px;
+  .info {
+    display: none;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .preview {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .description {
+    @include description;
+    &__title, &__text {
+      width: 60%;
+      margin: 0 auto;
+      color: $second-color;
+    }
+    &__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px 0;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      &__container {
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: $second-color;
+        margin: 15px 5px;
+        &:hover {
+          background: $base-color;
+        }
+        .icon {
+          height: 60%;
+          width: 60%;
+          fill: #fff;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .description--big {
+    bottom: -137px;
+  }
+  div[class*="item"] {
+    @include cover-relative;
+    &::after {
+      @include cover-100-absolute-content;
+    }
+    &:hover::before {
+      @include cover-before;
+    }
+    &:hover .price {
+      color: #fff;
+    }
+    &:hover .info, &:hover .preview, &:hover .description {
+      display: block;
+    }
+    &:hover, &:hover .description {
+      -webkit-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+      -moz-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+      box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.58);
+    }
+  }
+  .item1 {
+    grid-area: item1;
+    background: url("../img/man-1.png");
+  }
+  .item2 {
+    grid-area: item2;
+    background: url("../img/girl-2.png");
+  }
+  .item3 {
+    grid-area: item3;
+    background: url("../img/man-2.png");
+  }
+  .item4 {
+    grid-area: item4;
+    background: url("../img/man-3.png");
+  }
+  .item5 {
+    grid-area: item5;
+    background: url("../img/girl.png");
+  }
+  .item6 {
+    grid-area: item6;
+    background: url("../img/girl-3.png");
+  }
+  .price {
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    left: 15px;
+    font-size: 18px;
+    color: $sub-base-color;
+    z-index: 2;
+    sup {
+      top: -.2em;
+    }
+  }
+}
+
+/*================================================
+            5. PRODUCT
+==================================================
+*/
+
+.product {
+  @include container;
+  &__container {
+    display: flex;
+    padding-bottom: 125px;
+  }
+  &__item {
+    max-width: 800px;
+    height: 100%;
+    padding: 100px 55px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #575153;
+    margin: 0 0 30px;
+    line-height: 45px;
+  }
+  &__title--bold {
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1.2rem;
+    color: $second-color;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  &__botton {
+    width: 180px;
+    height: 60px;
+  }
+  .left {
+    background: url("../img/bottom-man-1.png") center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  .middle {
+    background: url("../img/bottom-girl-2.png") center center no-repeat;
+    background-size: cover;
+    margin: 0 30px;
+    box-sizing: border-box;
+  }
+  .right {
+    background: url("../img/bottom-noone-3.png") center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+}
+
+/*================================================
+            6. CONTACT
+==================================================
+*/
+
+.contact {
+  background: #f8f8f8;
+  padding-top: 60px;
+  &__content {
+    display: flex;
+    justify-content: center;
+    @include top-bot-container;
+    padding: 0 20px;
+  }
+  &__container {
+    width: 250px;
+    box-sizing: border-box;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: #575153;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    line-height: 25px;
+    &:hover {
+      color: $base-color;
+    }
+  }
+  &__text, &__link {
+    color: $second-color;
+  }
+}
+.more-links {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  @include top-bot-container;
+
+  &__winner {
+    width: 50%;
+    margin-right: 17px;
+  }
+  &__social {
+    width: 50%;
+    margin-left: 17px;
+    background: $base-color ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      height: 30px;
+      width: 30px;
+      margin: 0;
+      fill: #fff;
+      &:hover {
+        fill: lighten(#7436b3, 20%);
+      }
+    }
+  }
+  &__link {
+    margin: 0 20px;
+  }
+}
+
+/*================================================
+            7. FOOTER
+==================================================
+*/
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  &__container {
+    @include top-bot-container;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.designed-by {
+  display: flex;
+}
+.footer__designed-when, .designed-by__name  {
+  padding: 5px 17px;
+}
+@import "media";
+

@@ -1,0 +1,160 @@
+@font-face {
+  src: url("../../fonts/bebas_neue/BebasNeueThin.otf");
+  font-family: "Bebas Neue", serif;
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../fonts/bebas_neue/BebasNeueRegular.otf");
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../../fonts/bebas_neue/BebasNeueBold.otf");
+  font-family: "Bebas Neue", serif;
+  font-weight: 700;
+}
+body {
+  background: #9789f9;
+  font-family: "Bebas Neue", serif;
+}
+
+.ba-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.ba-pricing__col {
+  margin: 0 10px;
+  width: 370px;
+  height: 600px;
+}
+.ba-pricing__col .ba-price {
+  background: #f5f4f9;
+  text-align: center;
+  position: relative;
+}
+.ba-pricing__col .ba-price:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70px;
+  background: #f5f4f9;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+.ba-pricing__col .ba-price__rate {
+  margin: 0;
+  font-size: 55px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.ba-pricing__col .ba-price__rate sub, .ba-pricing__col .ba-price__rate sup {
+  font-size: 50%;
+}
+.ba-pricing__col .ba-price__rate sub {
+  bottom: 0;
+}
+.ba-pricing__col .ba-price__position {
+  text-transform: uppercase;
+  margin: 25px 0 30px;
+}
+.ba-pricing__col .ba-price__body {
+  background: #fff;
+  border-top-left-radius: 170px 130px;
+  border-top-right-radius: 170px 130px;
+  height: 390px;
+  padding-top: 50px;
+}
+.ba-pricing__col .ba-price__body div img {
+  margin-top: -16px;
+  margin-bottom: 25px;
+}
+.ba-pricing__col .ba-price__body ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+.ba-pricing__col .ba-price__body ul li {
+  font-size: 18px;
+  line-height: 46px;
+}
+.ba-pricing__col .ba-button {
+  background: #6fcffb;
+  padding: 15px;
+  border-radius: 50px;
+  position: absolute;
+  width: 200px;
+  top: 600px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.ba-pricing__col .ba-button:hover {
+  color: #fff;
+  background: #3dbefa;
+}
+
+.ba-pricing__col--center {
+  height: 680px;
+}
+.ba-pricing__col--center .ba-price:after {
+  height: 0;
+}
+.ba-pricing__col--center .ba-price {
+  position: relative;
+}
+.ba-pricing__col--center .ba-price .popular {
+  position: absolute;
+  top: 27px;
+  right: -90px;
+  z-index: 2;
+  background: #3b4040;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 20px;
+  display: none;
+}
+.ba-pricing__col--center .ba-price .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 358px;
+  top: 32px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #3b4040;
+  display: none;
+}
+.ba-pricing__col--center .ba-price .img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.ba-pricing__col--center .ba-price__body {
+  height: 450px;
+}
+.ba-pricing__col--center .ba-button {
+  top: 593px;
+  background: #fd8d7b;
+}
+.ba-pricing__col--center .ba-button:hover {
+  background: #fc6249;
+}
+.ba-pricing__col--center p {
+  padding: 30px 0;
+}
+
+.img:hover ~ .triangle, .img:hover + .popular {
+  display: block;
+}
+
+/*# sourceMappingURL=design.css.map */

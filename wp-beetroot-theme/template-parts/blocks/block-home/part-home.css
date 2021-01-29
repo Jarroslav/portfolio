@@ -1,0 +1,43 @@
+.home {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.home .home-title {
+    font-family: "Proxima Nova Bold";
+    font-size: 60px;
+    color: #fefefb;
+    text-transform: uppercase;
+    line-height: 60px;
+    padding-top: 225px;
+    margin-top: 0;
+}
+.home .home-description {
+    color: #fefdfd;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .home .home-title {
+        padding-top: 350px;
+        font-size: 72px;
+    }
+    .home .home-description {
+        font-size: 30px;
+    }
+}
+/* For correct display in wp-admin */
+.wp-block {
+    max-width: 1110px;
+}

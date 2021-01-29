@@ -1,0 +1,29 @@
+@mixin listStyle {
+  list-style: none;
+  display: flex;
+  z-index: 3;
+  padding: 0;
+}
+@mixin pointerFlexCenter {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+@mixin blackTitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #000;
+}
+@mixin blackTitleSmall {
+  @include blackTitle;
+  text-align: left;
+  font-size: 30px;
+  margin: 0;
+}
+@mixin contentContainerText {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

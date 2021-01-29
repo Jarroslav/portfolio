@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/first pet css.css">
+        <title>HTML file</title>
+    </head>
+    <body>
+        <p align="center">some text on center</p>
+        <hr width="75%" align="right"/>
+        <img src="tree.jpg" height="50px" width="50px" border="2px" alt="tree image" />
+        <p>тут еще один абзац и <br/>перенос строки</p>
+        
+        <a href="https://www.sololearn.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" height="4%" width="4%" /> Ссылка с изображением, открывается в новом окне </a>
+        <ol type="a" start="3" > <!--ol - ordered list
+                                  li - list item -->
+            <li>Обычный текст (нумерованный)</li>
+            <li><b>Текст жирным шрифтом (нумерованный)</b></li>
+        </ol>  
+        
+        <h3><span> Test code</span></h3> <!-- span - создаёт строчный блок в html5 -->
+        <ul type="square">  <!-- ul - unordered list
+                                        type="square"
+                                        type="circle"
+                                        type="disc"
+                             li - list item -->
+            <li><big>Текст крупным шрифтом</big></li>
+            <li><i>Текст курсивом</i></li>
+        </ul>  
+        <table border="1px" align="center"> <!-- table - создаёт таблицу
+                    tr - table rows 
+                    td - table data (columns)
+                    -->
+            <tr>        
+                <td><small>Текст мелким шрифтом</small></td>
+                <td><strong>Важный текст</strong></td>
+            </tr>
+            <tr>
+                <td>Так выглядит<sub>Подстрочный текст</sub></td>
+                <td>А так<sup>Надстрочный текст</sup></td>
+            </tr>
+        </table>
+        
+        <br/><br/>
+        
+        <table border="2px">
+            <tr>
+                <td>Red</td>
+                <td>Blue</td>
+                <td>Green</td>
+                <td>Yellow</td>
+                <td rowspan="2" bgcolor="orange">SpongeBob</td> <!-- rowspan - expand a cell for two or more -->
+            </tr>
+            <tr>
+                <td><br/></td>
+                <td>Olive</td>
+                <td colspan="2" bgcolor="brown">Brown</td> <!-- colspan - expand a cell for two or more -->
+            </tr>
+        </table>
+            <p><ins>Вставленный текст</ins></p>
+            <p><del>Удаленный текст (зачеркнутый)</del></p>
+            
+            <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            
+<!--Создаю сайт, где можно переходить на другие страницы щёлкая по элементам на картинке-->
+
+            <h2>The map and area elements</h2> 
+
+            <div class="desktop">
+
+                <img src="./pics/desc.jpg" alt="Workplace" usemap="#workmap" width="800px" height="600px"> 
+
+                    <map name="workmap" height="600px" width="800px" >
+                        <area shape="rect" coords="20,80,180,200" alt="Lamp" href="./root/lamp.html">
+                        <area shape="rect" coords="250,50,710,370" alt="Computer" href="./root/computer.html">
+                        <area shape="circle" coords="620,430,30" alt="Mouse" href="./root/mouse.html">
+                    </map>
+            </div>
+        
+    </body>
+</html>
+

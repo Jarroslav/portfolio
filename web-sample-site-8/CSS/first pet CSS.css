@@ -1,0 +1,32 @@
+body {
+    background: lightgrey;
+    background-position: top center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 22px;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0px 290px 0px 290px;
+    background: #efefef;
+}
+h3 span {
+    border: 4px dashed #20bccd5;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+}
+.desktop {
+    padding: 0 300px 0 250px;
+    margin: 0 auto;
+    background-position: top center;
+}
+.links3 {
+    padding: 500px 200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,379 @@
+@import url("~normalize.css");
+@import "variables.scss";
+@import "mixins.scss";
+body {
+  background-color: #e1e3e6;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: $pageContainer;
+}
+.header {
+  background: $headerColor;
+  background-size: $cover;
+  &__container {
+    //width: $pageContainer*1.05;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0;
+    line-height: 100%;
+  }
+  .logo {
+    padding: $inputSize/2 0;
+    &__title {
+      color: $tableFontColor;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    &__title::first-letter {
+      color: $capitalFontColor;
+    }
+    &__subtitle {
+      color: darken($tableFontColor, 20%);
+      margin: 0;
+    }
+  }
+  .search {
+    padding: $inputSize/2;
+    &__input {
+      height: $inputSize;
+      border: 2px solid $capitalFontColor;
+      background: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 0 10px;
+      outline: none;
+    }
+    &__input:hover{
+      border-color: darken($capitalFontColor, 10%);
+      background: darken($headerColor, 5%);
+    }
+    &__button {
+      height: $inputSize;
+      width: $inputSize;
+      cursor: pointer;
+      background: $capitalFontColor;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+    }
+    &__button:hover {
+      background: darken($capitalFontColor, 10%);
+    }
+  }
+}
+.banner {
+  width: $pageContainer;
+  margin: 0 auto;
+  background: url("../dist/img/mainBg.png");
+  background-size: $cover;
+  padding: $inputSize*1.5 $inputSize/.8;
+  &__title {
+    color: $tableFontColor;
+    display: flex;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 32px;
+    .banner__title--span {
+      display: block;
+      padding-right: .5rem;
+    }
+    &--firstWord::first-letter{
+      color: $capitalFontColor;
+      text-transform: uppercase;
+    }
+  }
+  &__subtitle {
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &__text-title {
+    color: $tableFontColor;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+  }
+  &__text {
+    width: $pageContainer/2;
+    color: #d9dcdf;
+  }
+}
+.nav {
+  background-color: #95161f;
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  &__item {
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    .nav__link {
+      color: #fff;
+    }
+  }
+  &__item::first-letter {
+    text-transform: uppercase;
+  }
+}
+.sitePath {
+  background-color: #f3f3f3;
+  &__form {
+    display: flex;
+    align-items: center;
+    .sitePath__input[type="radio"] {
+      display: none;
+    }
+    .sitePath__input:checked+.sitePath__label .sitePath__link{
+      color: $greyText;
+    }
+  }
+  &__label {
+    margin: 0;
+    padding: 5px 0;
+  }
+  &__label .sitePath__link{
+    color: $capitalFontColor;
+    text-decoration: none;
+    border-bottom: 1px solid $capitalFontColor;
+  }
+  &__label:not(:first-of-type)::before {
+    content: '/';
+    padding: 0 5px;
+  }
+  &__label:last-of-type .sitePath__link{
+    cursor: default;
+    border-bottom: 1px solid transparent;
+  }
+  &__label:last-of-type .sitePath__link:hover {
+    text-decoration: none;
+  }
+}
+.main {
+  background-color: #fff;
+  padding: 30px;
+  .row {
+    .aside {
+      &__form {
+        fieldset {
+          padding: 15px;
+          display: flex;
+          background: #f3f3f3;
+          border: 1px solid lighten($greyText, 20%);
+          box-shadow: 2px 8px 15px $greyText;
+          margin-bottom: 20px;
+          input, select {
+            height: $inputSize;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 0 10px;
+            outline-color: lighten($greyText, 10%);
+            background: #e3e4e5;
+            color: #757575;
+            font-size: 14px;
+          }
+          select {
+            background: darken(#e3e4e5, 5%)
+          }
+          button {
+            width: 90%;
+            font-size: 14px;
+            height: $inputSize*1.7;
+            margin: 0 auto;
+            border: 5px solid #fff;
+            background: linear-gradient(90deg, #981821 0%, #ae232d 100%);
+            color: #fff;
+            box-shadow: 0 1px 8px $greyText;
+          }
+        }
+      }
+      .headline {
+        &__title {
+          text-transform: capitalize;
+          font-size: 20px;
+        }
+        &__text {
+          font-size: 16px;
+        }
+        &__link {
+          color: $capitalFontColor;
+          text-decoration: underline;
+        }
+      }
+    }
+    .page {
+      &__title {
+        text-transform: capitalize;
+        color: $tableFontColor;
+        font-weight: 700;
+        font-size: 26px;
+      }
+      &__title--firstLetter {
+        color: $capitalFontColor;
+      }
+      &__text {
+        color: $contentFontColor;
+        font-size: 16px;
+      }
+      &__text--link {
+        color: $capitalFontColor;
+        text-decoration: underline;
+      }
+      .preview {
+        margin-bottom: 20px;
+        &__item .preview__link{
+          .preview__title {
+            color: $mainColor;
+          }
+        }
+        &__item .preview__link:hover {
+          text-decoration: none;
+        }
+        &__item .preview__link:hover .preview__img {
+          transform: scale(1.1);
+          transition: ease 0.3s;
+        }
+        &__item .preview__link .preview__img {
+          transition: ease 0.3s;
+        }
+      }
+      .lists {
+        color: $contentFontColor;
+        &__title {
+          font-size: 16px;
+          text-align: left;
+        }
+        &__title--code {
+          background: #dddddd;
+        }
+        &__styled {
+          font-size: 14px;
+          padding-left: 17px;
+        }
+        &__styled--nesting {
+          padding-left: 17px;
+        }
+        &__unstyled {
+          list-style: none;
+          padding-left: 0;
+          font-size: 14px;
+        }
+        &__ordered {
+          font-size: 14px;
+          padding-left: 17px;
+        }
+      }
+      .table {
+        font-size: 14px;
+        color: $tableFontColor;
+        .table__row:first-child .table__header:first-child {
+          border-left: none;
+          border-top: none;
+          border-top-left-radius: 7px;
+        }
+        .table__row:first-child .table__header:last-child {
+          border-right: none;
+          border-top: none;
+          border-top-right-radius: 7px;
+        }
+        .table__row:last-child .table__data:first-child {
+          border-left: none;
+          border-bottom: none;
+          border-bottom-left-radius: 7px;
+        }
+        .table__row:last-child .table__data:last-child {
+          border-right: none;
+          border-bottom: none;
+          border-bottom-right-radius: 7px;
+        }
+        &__header {
+          background: $capitalFontColor;
+          border: 1px solid #d8dbde;
+          text-align: center;
+        }
+        &__data {
+          background: $mainColor;
+          border: 1px solid #d8dbde;
+        }
+        &__row--start .table__header {
+          border-top: none;
+        }
+        &__row--end .table__data {
+          border-bottom: none;
+        }
+        &__link {
+          color: lighten($capitalFontColor, 20%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.divider {
+  margin: 0;
+  height: 10px;
+  background: $capitalFontColor;
+}
+.footer {
+  background: linear-gradient(to top, #2c2a32 0%, #292d37 10%, #262f33 30%, #252d32 50%, #262f32 70%, #263031 100%);
+  padding-top: 20px;
+  &__container {
+    color: $greyText;
+    font-size: 12px;
+  }
+  &__title {
+    text-transform: capitalize;
+    color: $tableFontColor;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__title:first-letter {
+    color: $capitalFontColor;
+  }
+  &__container:nth-of-type(2) .footer__title:first-letter {
+    color: $tableFontColor;
+  }
+  &__divider {
+    height: 1px;
+    background: linear-gradient(to top, #40474f 50%, #191c20 100%);
+  }
+  &__text {
+    margin: 0;
+  }
+  &__list {
+    padding-left: 17px;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__item::before {
+    content: "•";
+    color: lighten($capitalFontColor, 5%);
+    height: 8px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 700;
+  }
+  &__text--call {
+    font-weight: 700;
+    color: $tableFontColor;
+  }
+  &__link {
+    color: lighten($capitalFontColor, 5%);
+  }
+  &__link:hover {
+    color: $capitalFontColor;
+  }
+}

@@ -1,0 +1,127 @@
+/* ------------------ */
+/* HAMBURGER MENU*/
+/* ------------------ */
+#menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 1.5rem;
+}
+.menu__btn > span::after {
+    display: none;
+    position: absolute;
+    width: 2.2rem;
+    height: 0.01rem;
+    background-color: #616161;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.menu__btn > span {
+    display: none;
+    position: absolute;
+    width: 1rem;
+    height: 0.01rem;
+    background-color: #616161;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+}
+.menu__btn > span::before {
+    display: none;
+    position: absolute;
+    width: 1.7rem;
+    height: 0.01rem;
+    background-color: #616161;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -.5rem;
+}
+.menu__btn > span::after {
+    content: '';
+    top: .5rem;
+}
+/*MENU BOX*/
+nav.mobile-nav .menu__box {
+
+}
+/* menu elements */
+.menu__item {
+    display: block;
+    padding: 0.9rem 1.1rem;
+    font-size: .8rem;
+    align-items: center;
+    font-weight: 700;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+/**/
+/**/
+nav.mobile-nav .first-level{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    background-color: #60606e;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    /*display: none;*/
+    visibility: hidden;
+    position: fixed;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/**/
+#menu__toggle:checked ~ .menu__btn > span {
+    width: 2.2rem;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    width: 2.2rem;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    width: 2.2rem;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#menu__toggle:checked ~ ul.first-level {
+    visibility: visible;
+    /*left: 0;*/
+}
+/**/
+nav.mobile-nav .first-level li:not(:hover) {
+    opacity: 0.5;
+}
+.line {
+    height: 0.01rem;
+    width: 3rem;
+    background-color: #60606e;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.line:nth-child(2) {
+    margin: .5rem 0;
+    width: 2.2rem;
+}.line:last-child {
+     width: 2.2rem;
+ }
+

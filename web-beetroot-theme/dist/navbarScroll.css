@@ -1,0 +1,13 @@
+.header__top.scrolled  .desktop-menu__link,
+.header__top.scrolled  .logo-svg {
+    color: #665f60;
+    fill: #a2e6cb;
+    stroke: #665f6050;
+}
+.active-anchor {
+    background: -webkit-linear-gradient(45deg, #655da4, #8783b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: transparent;
+    transition: box-shadow .1s;
+}
