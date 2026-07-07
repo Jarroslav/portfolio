@@ -8,7 +8,7 @@ export function EarlierWorkRickAndMorty() {
     <div ref={ref} data-reveal className="earlier-work">
       <div className="earlier-work__label">Earlier work</div>
       <a
-        href="https://github.com/Jarroslav"
+        href="https://github.com/Jarroslav/ricknmorty"
         target="_blank"
         rel="noopener"
         className="earlier-work__row"

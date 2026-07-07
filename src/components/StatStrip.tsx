@@ -5,7 +5,7 @@ const STATS = [
   { value: '95%+', caption: 'suite stability' },
   { value: '200+', caption: 'tests migrated' },
   { value: '$100K+', caption: 'Upwork · Top Rated Plus' },
-  { value: '7 yrs', caption: 'EPAM Systems' },
+  { value: '7+ yrs', caption: 'Test automation experience' },
 ]
 
 export function StatStrip() {

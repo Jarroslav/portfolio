@@ -35,7 +35,7 @@ export function Hero() {
       <div className="hero__side">
         <div className="hero__portrait">
           <img
-            src={`${import.meta.env.BASE_URL}images/portrait.svg`}
+            src={`${import.meta.env.BASE_URL}images/portrait.jpg`}
             alt="Portrait of Yaroslav Krivushenko"
           />
         </div>

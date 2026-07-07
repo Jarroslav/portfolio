@@ -27,7 +27,7 @@ export function HighlightAgenticOS() {
           ))}
         </div>
         <a
-          href="https://github.com/Jarroslav"
+          href="https://github.com/Jarroslav/agentic-os"
           target="_blank"
           rel="noopener"
           className="agentic-os__cta"

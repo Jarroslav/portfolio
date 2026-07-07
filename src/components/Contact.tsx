@@ -30,6 +30,14 @@ export function Contact() {
             LinkedIn ↗
           </a>
           <a
+            href="https://www.upwork.com/freelancers/~01c1ffb80764b396fe"
+            target="_blank"
+            rel="noopener"
+            className="contact__btn contact__btn--outline"
+          >
+            Upwork ↗
+          </a>
+          <a
             href="https://github.com/Jarroslav"
             target="_blank"
             rel="noopener"
@@ -49,7 +57,7 @@ export function Contact() {
       </div>
       <div className="contact__footer">
         <span>© 2026 Yaroslav Krivushenko</span>
-        <span>Ukraine · remote · built &amp; deployed on GitHub Pages</span>
+        <span>Ukraine · remote</span>
       </div>
     </section>
   )

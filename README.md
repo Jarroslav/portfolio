@@ -19,5 +19,5 @@ npm run build
 
 ## Assets
 
-- `public/images/portrait.svg` — placeholder portrait; replace with a real photo at `public/images/portrait.jpg` (and update the `src` in `src/components/Hero.tsx`) when available.
+- `public/images/portrait.jpg` — portrait photo used in the hero section.
 - `public/images/from-ashes.png` — real screenshot of [from-ashes.com](https://www.from-ashes.com).

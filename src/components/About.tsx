@@ -24,7 +24,8 @@ export function About() {
         </div>
         <div>
           <p className="about__lead">
-            Lead Test Automation Engineer with 7+ years at EPAM Systems, specializing in
+            Lead Test Automation Engineer with 7+ years of experience, including 3.5+ years at
+            EPAM Systems, specializing in
             Playwright, TypeScript, Azure and Quality Engineering. I connect requirements,
             testing, delivery and AI automation without sacrificing governance or production
             safety.
