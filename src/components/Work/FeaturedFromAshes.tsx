@@ -48,7 +48,7 @@ export function FeaturedFromAshes() {
         </div>
         <div className="from-ashes__actions">
           <a
-            href="https://www.from-ashes.com"
+            href="https://from-ashes.com/?utm_source=portfolio"
             target="_blank"
             rel="noopener"
             className="btn btn--primary btn--sm"
