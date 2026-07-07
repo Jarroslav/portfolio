@@ -1,5 +1,5 @@
 .pipeline {
-  padding: 62px 0 8px;
+  padding-block: 62px 8px;
 }
 
 .pipeline__kicker {
@@ -121,7 +121,7 @@
 
 @media (max-width: 767px) {
   .pipeline {
-    padding: 44px 0 8px;
+    padding-block: 44px 8px;
   }
 
   .pipeline__title {
