@@ -1,0 +1,64 @@
+:root {
+  --bg: #f4f2ec;
+  --bg-2: #faf9f5;
+  --surface: #ffffff;
+  --ink: #1c1b18;
+  --ink-inverse: #f4f2ec;
+
+  --muted-60: rgba(0, 0, 0, 0.6);
+  --muted-55: rgba(0, 0, 0, 0.55);
+  --muted-45: rgba(0, 0, 0, 0.45);
+  --muted-40: rgba(0, 0, 0, 0.4);
+
+  --hairline: rgba(0, 0, 0, 0.1);
+  --hairline-soft: rgba(0, 0, 0, 0.08);
+
+  --green-label: oklch(0.48 0.13 155);
+  --green-label-hero: oklch(0.44 0.13 155);
+  --green-dot: oklch(0.55 0.14 155);
+  --green-fill: oklch(0.62 0.16 150);
+  --green-node: oklch(0.55 0.13 155);
+  --green-dark-num: oklch(0.74 0.13 155);
+  --green-pass-bg: oklch(0.62 0.14 150 / 0.12);
+  --green-pass-border: oklch(0.55 0.13 150 / 0.45);
+  --green-pass-text: oklch(0.4 0.12 150);
+  --green-terminal-ok: oklch(0.76 0.14 150);
+
+  --blue-label: oklch(0.48 0.13 220);
+  --blue-label-hover: oklch(0.42 0.14 220);
+  --blue-node: oklch(0.55 0.13 220);
+
+  --violet: oklch(0.5 0.14 300);
+  --violet-text: oklch(0.4 0.14 300);
+  --violet-text-soft: oklch(0.44 0.1 300);
+  --violet-label: oklch(0.46 0.14 300);
+  --violet-bg: oklch(0.5 0.14 300 / 0.09);
+  --violet-border: oklch(0.5 0.14 300 / 0.4);
+  --violet-bright: oklch(0.7 0.16 285);
+  --violet-bright-hover: oklch(0.76 0.14 285);
+  --violet-bright-text: oklch(0.78 0.13 285);
+  --violet-bright-border: oklch(0.7 0.13 285 / 0.4);
+  --violet-band-bg: oklch(0.5 0.14 300 / 0.06);
+  --violet-band-border: oklch(0.5 0.14 300 / 0.2);
+  --violet-band-text: oklch(0.44 0.14 300);
+  --violet-selection: oklch(0.5 0.14 300 / 0.2);
+
+  --orange: oklch(0.5 0.13 30);
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --container-max: 1160px;
+  --container-pad: 40px;
+
+  --nav-scroll-offset: 88px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-max: 440px;
+    --container-pad: 20px;
+    --nav-scroll-offset: 64px;
+  }
+}

@@ -1,0 +1,130 @@
+.fa-pipeline {
+  background: var(--bg-2);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  padding: 30px 34px;
+  margin-bottom: 26px;
+}
+
+.fa-pipeline__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.fa-pipeline__title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.fa-pipeline__tag {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted-40);
+}
+
+.fa-pipeline__lead {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.58);
+  max-width: 760px;
+  margin: 0 0 22px;
+}
+
+.fa-pipeline__pass-word {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+}
+
+.fa-pipeline__layers {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+}
+
+.fa-pipeline__layer-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
+}
+
+.fa-pipeline__layer-label--design {
+  color: var(--violet-label);
+}
+
+.fa-pipeline__layer-label--production {
+  color: var(--blue-label);
+}
+
+.fa-pipeline__layer-label--release {
+  color: var(--orange);
+}
+
+.fa-pipeline__chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.fa-pipeline__chip-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.fa-pipeline__chip {
+  padding: 6px 10px;
+  background: var(--surface);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+}
+
+.fa-pipeline__chip--pass {
+  background: var(--green-pass-bg);
+  border-color: var(--green-pass-border);
+  color: var(--green-pass-text);
+}
+
+.fa-pipeline__chip--human {
+  background: oklch(0.5 0.14 300 / 0.1);
+  border-color: var(--violet-border);
+  color: oklch(0.42 0.14 300);
+}
+
+.fa-pipeline__chip--dark {
+  background: var(--ink);
+  color: var(--ink-inverse);
+  border-color: var(--ink);
+}
+
+.fa-pipeline__arrow {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-pipeline__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hairline-soft);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted-55);
+}
+
+@media (max-width: 767px) {
+  .fa-pipeline {
+    padding: 20px;
+  }
+}

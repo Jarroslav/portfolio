@@ -1,0 +1,112 @@
+.contact {
+  padding: 80px 0 90px;
+  border-top: 1px solid var(--hairline);
+}
+
+.contact__block {
+  background: var(--ink);
+  color: var(--ink-inverse);
+  border-radius: 22px;
+  padding: 60px 52px;
+  text-align: center;
+}
+
+.contact__kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green-dark-num);
+}
+
+.contact__title {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 18px 0 10px;
+  line-height: 1.08;
+}
+
+.contact__lead {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(244, 242, 236, 0.6);
+  max-width: 520px;
+  margin: 0 auto 34px;
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.contact__btn--solid {
+  background: var(--ink-inverse);
+  color: var(--ink) !important;
+}
+
+.contact__btn--solid:hover {
+  background: #fff;
+}
+
+.contact__btn--outline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--ink-inverse) !important;
+  font-family: var(--font-mono);
+  padding: 14px 22px;
+}
+
+.contact__btn--outline:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 28px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted-45);
+}
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 48px 0 60px;
+  }
+
+  .contact__block {
+    padding: 36px 24px;
+    border-radius: 18px;
+  }
+
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .contact__actions {
+    flex-direction: column;
+  }
+
+  .contact__btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 44px;
+  }
+}

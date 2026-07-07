@@ -1,0 +1,121 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 60px;
+  padding: 78px 0 64px;
+  align-items: center;
+}
+
+.hero__kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-label-hero);
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green-dot);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: 62px;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.hero__lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.62);
+  max-width: 490px;
+  margin: 0 0 40px;
+}
+
+.hero__ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero__side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero__portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--surface);
+}
+
+.hero__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__building {
+  background: var(--ink);
+  color: var(--ink-inverse);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.hero__building-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green-dark-num);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.hero__building-title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.hero__building-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(244, 242, 236, 0.62);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 44px 0 40px;
+    gap: 32px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__lead {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .hero__portrait {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <rect width="400" height="500" fill="#1c1b18"/>
+  <circle cx="200" cy="190" r="80" fill="#3a3833"/>
+  <path d="M60 460c0-90 63-150 140-150s140 60 140 150" fill="#3a3833"/>
+  <text x="200" y="470" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#8a887f">portrait — drop /public/images/portrait.jpg</text>
+</svg>
