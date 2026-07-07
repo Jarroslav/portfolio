@@ -127,4 +127,26 @@
   .fa-pipeline {
     padding: 20px;
   }
+
+  .fa-pipeline__chip-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .fa-pipeline__chip-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .fa-pipeline__chip {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .fa-pipeline__arrow {
+    transform: rotate(90deg);
+  }
 }
