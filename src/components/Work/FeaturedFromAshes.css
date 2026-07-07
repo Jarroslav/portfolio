@@ -50,6 +50,12 @@
   display: block;
 }
 
+.from-ashes__shot picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .from-ashes__pill-row {
   display: flex;
   align-items: center;
@@ -109,5 +115,9 @@
 
   .from-ashes__note {
     text-align: center;
+  }
+
+  .from-ashes__shot {
+    aspect-ratio: 4 / 3;
   }
 }

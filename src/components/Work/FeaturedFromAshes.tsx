@@ -16,10 +16,16 @@ export function FeaturedFromAshes() {
           <span className="from-ashes__url">www.from-ashes.com</span>
         </div>
         <div className="from-ashes__shot">
-          <img
-            src={`${import.meta.env.BASE_URL}images/from-ashes.png`}
-            alt="Screenshot of the From Ashes platform"
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet={`${import.meta.env.BASE_URL}images/from-ashes-mobile.png`}
+            />
+            <img
+              src={`${import.meta.env.BASE_URL}images/from-ashes.png`}
+              alt="Screenshot of the From Ashes platform"
+            />
+          </picture>
         </div>
       </div>
       <div className="from-ashes__info">
