@@ -36,6 +36,13 @@
   margin-bottom: 24px;
 }
 
+.agentic-os__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
 .agentic-os__cta {
   display: inline-flex;
   align-items: center;

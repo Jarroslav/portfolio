@@ -1,0 +1,145 @@
+.pw-triage {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 44px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  padding: 34px;
+  margin-bottom: 40px;
+}
+
+.pw-triage__pill-row {
+  margin-bottom: 14px;
+}
+
+.pw-triage__title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
+.pw-triage__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.pw-triage__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Faux PR-comment preview */
+.pw-triage__preview {
+  background: var(--bg-2);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
+.pw-triage__comment-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #ece9e1;
+  border-bottom: 1px solid var(--hairline-soft);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.pw-triage__bot {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.pw-triage__bot-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  color: var(--muted-55);
+}
+
+.pw-triage__comment-meta {
+  color: var(--muted-40);
+}
+
+.pw-triage__comment-body {
+  padding: 18px 16px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.pw-triage__comment-title {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.pw-triage__verdict {
+  display: block;
+  color: var(--muted-60);
+  padding: 7px 0;
+  border-top: 1px solid var(--hairline-soft);
+}
+
+.pw-triage__mark {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.pw-triage__verdict--bug .pw-triage__mark {
+  color: var(--orange);
+  background: oklch(0.5 0.13 30 / 0.12);
+  border: 1px solid oklch(0.5 0.13 30 / 0.4);
+}
+
+.pw-triage__verdict--flaky .pw-triage__mark {
+  color: var(--green-pass-text);
+  background: var(--green-pass-bg);
+  border: 1px solid var(--green-pass-border);
+}
+
+.pw-triage__verdict--drift .pw-triage__mark {
+  color: var(--blue-label);
+  background: oklch(0.55 0.13 220 / 0.1);
+  border: 1px solid oklch(0.55 0.13 220 / 0.4);
+}
+
+@media (max-width: 767px) {
+  .pw-triage {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .pw-triage__title {
+    font-size: 24px;
+  }
+
+  .pw-triage__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pw-triage__preview {
+    order: -1;
+  }
+}

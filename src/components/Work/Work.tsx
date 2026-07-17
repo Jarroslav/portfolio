@@ -1,7 +1,8 @@
 import { FeaturedFromAshes } from './FeaturedFromAshes'
 import { FromAshesPipelinePanel } from './FromAshesPipelinePanel'
+import { FeaturedPlaywrightTriage } from './FeaturedPlaywrightTriage'
 import { HighlightAgenticOS } from './HighlightAgenticOS'
-import { EarlierWorkRickAndMorty } from './EarlierWorkRickAndMorty'
+import { MoreProjects } from './MoreProjects'
 import './Work.css'
 
 export function Work() {
@@ -14,8 +15,9 @@ export function Work() {
 
       <FeaturedFromAshes />
       <FromAshesPipelinePanel />
+      <FeaturedPlaywrightTriage />
       <HighlightAgenticOS />
-      <EarlierWorkRickAndMorty />
+      <MoreProjects />
     </section>
   )
 }

@@ -25,6 +25,71 @@
   letter-spacing: 0.06em;
 }
 
+/* --- Shared case-study block (Problem / Approach / Outcome) --- */
+.case-study {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin: 0 0 20px;
+}
+
+.case-study__row {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.case-study__label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  opacity: 0.5;
+  padding-top: 1px;
+}
+
+.case-study__val {
+  font-size: 14.5px;
+  line-height: 1.55;
+  opacity: 0.86;
+}
+
+.case-study__val strong {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* --- Shared live-badge row (shields.io) --- */
+.card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.card__badges img {
+  height: 20px;
+  display: block;
+}
+
+/* --- Secondary "read the architecture" link --- */
+.card__arch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: inherit;
+  opacity: 0.62;
+  transition: opacity 0.15s ease;
+}
+
+.card__arch:hover {
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .work {
     padding-block: 48px 24px;
@@ -32,5 +97,10 @@
 
   .work__title {
     font-size: 26px;
+  }
+
+  .case-study__row {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 }
