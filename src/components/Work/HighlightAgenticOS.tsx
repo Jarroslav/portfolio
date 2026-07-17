@@ -13,12 +13,41 @@ export function HighlightAgenticOS() {
           <span className="pill pill--violet-bright">Public · Open source</span>
         </div>
         <h3 className="agentic-os__title">agentic-os</h3>
-        <p className="agentic-os__desc">
-          A portable, governed multi-agent architecture you install into any repo in a single
-          interview. Canonical agent contracts, enforcement hooks — blind pre-commit review,
-          write-scope guard, spawn gate — an HITL escalation ladder and a decision-router with a
-          full audit trail. Ships as a Claude Code plugin; stack- and role-agnostic.
-        </p>
+        <div className="card__badges">
+          <img
+            src="https://img.shields.io/github/stars/Jarroslav/agentic-os?style=flat&label=stars"
+            alt="GitHub stars"
+            loading="lazy"
+          />
+          <img
+            src="https://img.shields.io/github/license/Jarroslav/agentic-os?style=flat&label=license"
+            alt="License: Apache-2.0"
+            loading="lazy"
+          />
+        </div>
+        <dl className="case-study">
+          <div className="case-study__row">
+            <dt className="case-study__label">Problem</dt>
+            <dd className="case-study__val">
+              Multi-agent coding without governance is unsafe.
+            </dd>
+          </div>
+          <div className="case-study__row">
+            <dt className="case-study__label">Approach</dt>
+            <dd className="case-study__val">
+              Canonical agent contracts + <strong>enforcement hooks, not prompts</strong> — blind
+              pre-commit review, write-scope guard, spawn gate — an HITL escalation ladder and a
+              decision-router with a full audit trail.
+            </dd>
+          </div>
+          <div className="case-study__row">
+            <dt className="case-study__label">Outcome</dt>
+            <dd className="case-study__val">
+              <strong>Apache-2.0</strong>, stack- and role-agnostic; ships as a Claude Code + Cursor
+              marketplace and installs into any repo in a single interview.
+            </dd>
+          </div>
+        </dl>
         <div className="agentic-os__tags">
           {TAGS.map((tag) => (
             <span className="tag tag--dark" key={tag}>
@@ -26,14 +55,24 @@ export function HighlightAgenticOS() {
             </span>
           ))}
         </div>
-        <a
-          href="https://github.com/Jarroslav/agentic-os"
-          target="_blank"
-          rel="noopener"
-          className="agentic-os__cta"
-        >
-          View on GitHub <span className="glyph">↗</span>
-        </a>
+        <div className="agentic-os__actions">
+          <a
+            href="https://github.com/Jarroslav/agentic-os"
+            target="_blank"
+            rel="noopener"
+            className="agentic-os__cta"
+          >
+            View on GitHub <span className="glyph">↗</span>
+          </a>
+          <a
+            href="https://github.com/Jarroslav/agentic-os/blob/main/docs/PRINCIPLES.md"
+            target="_blank"
+            rel="noopener"
+            className="card__arch"
+          >
+            Read the architecture <span className="glyph">↗</span>
+          </a>
+        </div>
       </div>
 
       <div className="agentic-os__terminal">

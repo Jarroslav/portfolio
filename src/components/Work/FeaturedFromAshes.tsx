@@ -33,12 +33,29 @@ export function FeaturedFromAshes() {
           <span className="pill pill--green">Live · Solo build</span>
         </div>
         <h3 className="from-ashes__title">From Ashes</h3>
-        <p className="from-ashes__desc">
-          A production urban-fantasy text-roleplay platform, built from scratch. 62K+ LOC, 130+
-          database migrations, RBAC, semantic search, realtime messaging, lore management,
-          AI-assisted features and 20+ admin tools — with a full CI/CD, release-governance and
-          backup/restore pipeline.
-        </p>
+        <dl className="case-study">
+          <div className="case-study__row">
+            <dt className="case-study__label">Problem</dt>
+            <dd className="case-study__val">
+              Run a live, multiplayer creative community — solo, in production.
+            </dd>
+          </div>
+          <div className="case-study__row">
+            <dt className="case-study__label">Approach</dt>
+            <dd className="case-study__val">
+              Next.js 15 + Supabase, delivered through an <strong>11-agent HITL workflow</strong> and
+              a full solo SDLC — design, release governance and backups.
+            </dd>
+          </div>
+          <div className="case-study__row">
+            <dt className="case-study__label">Outcome</dt>
+            <dd className="case-study__val">
+              <strong>62K+ LOC · 130+ migrations</strong> live in production — RBAC, semantic search,
+              realtime messaging and 20+ admin tools, behind CI/CD, release governance and
+              backup/restore.
+            </dd>
+          </div>
+        </dl>
         <div className="from-ashes__tags">
           {TAGS.map((tag) => (
             <span className="tag" key={tag}>
