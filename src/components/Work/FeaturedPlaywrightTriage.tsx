@@ -25,7 +25,7 @@ export function FeaturedPlaywrightTriage() {
             loading="lazy"
           />
           <img
-            src="https://img.shields.io/github/actions/workflow/status/Jarroslav/playwright-ai-triage/ci.yml?branch=main&style=flat&label=ci"
+            src="https://img.shields.io/github/actions/workflow/status/flaketrace/playwright-ai-triage/ci.yml?branch=main&style=flat&label=ci"
             alt="CI status"
             loading="lazy"
           />
@@ -68,7 +68,7 @@ export function FeaturedPlaywrightTriage() {
             View on npm <span className="glyph">↗</span>
           </a>
           <a
-            href="https://github.com/Jarroslav/playwright-ai-triage"
+            href="https://github.com/flaketrace/playwright-ai-triage"
             target="_blank"
             rel="noopener"
             className="btn btn--outline btn--sm"
@@ -76,7 +76,7 @@ export function FeaturedPlaywrightTriage() {
             GitHub <span className="glyph">↗</span>
           </a>
           <a
-            href="https://github.com/Jarroslav/playwright-ai-triage#readme"
+            href="https://github.com/flaketrace/playwright-ai-triage#readme"
             target="_blank"
             rel="noopener"
             className="card__arch"
