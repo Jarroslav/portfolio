@@ -3,7 +3,7 @@ import './StatStrip.css'
 
 const STATS = [
   { value: '95%+', caption: 'suite stability' },
-  { value: '124', caption: 'tests migrated to Playwright' },
+  { value: '60%+', caption: 'less manual test design' },
   { value: '$100K+', caption: 'Upwork · Top Rated Plus' },
   { value: '7+ yrs', caption: 'Test automation experience' },
 ]
