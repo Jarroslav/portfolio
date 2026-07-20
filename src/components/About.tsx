@@ -2,10 +2,10 @@ import { useReveal } from '../hooks/useReveal'
 import './About.css'
 
 const BULLETS = [
-  'Led Playwright + TypeScript migration of 200+ tests — suite stability from ~60% to 95%+.',
+  'Led the Cypress → Playwright migration of 124 test cases after an auth outage broke the suite — stability to 95%+, and developers started editing tests themselves.',
   'Designed governed agentic QA workflows with policy enforcement, MCP integrations and Azure DevOps traceability.',
   'Built a multi-agent knowledge platform on Azure AI Foundry — onboarding time down 40–50% for 40+ engineers.',
-  'Scaled QA automation from 1 to 5 engineers through architecture standards and code-review governance.',
+  'Scaled QA automation from 1 to 5 engineers at Pecode (Garantme) through architecture standards and code-review governance.',
 ]
 
 export function About() {
