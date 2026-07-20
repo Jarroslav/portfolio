@@ -1,7 +1,7 @@
 import { useReveal } from '../../hooks/useReveal'
 import './HighlightAgenticOS.css'
 
-const TAGS = ['Claude Code plugin', 'HITL governance', 'Decision-router']
+const TAGS = ['3-plugin suite', 'HITL governance', 'Decision-router']
 
 export function HighlightAgenticOS() {
   const ref = useReveal<HTMLDivElement>()
@@ -43,8 +43,10 @@ export function HighlightAgenticOS() {
           <div className="case-study__row">
             <dt className="case-study__label">Outcome</dt>
             <dd className="case-study__val">
-              <strong>Apache-2.0</strong>, stack- and role-agnostic; ships as a Claude Code + Cursor
-              marketplace and installs into any repo in a single interview.
+              <strong>Apache-2.0</strong>, stack- and role-agnostic — a three-plugin suite
+              (agentic-os governance · agentic-sdlc pipeline · agentic-qe, a 28-blueprint QE catalog
+              spanning the STLC) that ships for both Claude Code and Cursor and installs into any
+              repo in a single interview.
             </dd>
           </div>
         </dl>

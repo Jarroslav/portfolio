@@ -50,9 +50,9 @@ export function FeaturedFromAshes() {
           <div className="case-study__row">
             <dt className="case-study__label">Outcome</dt>
             <dd className="case-study__val">
-              <strong>62K+ LOC · 130+ migrations</strong> live in production — RBAC, semantic search,
-              realtime messaging and 20+ admin tools, behind CI/CD, release governance and
-              backup/restore.
+              <strong>117K+ LOC · 200+ database migrations</strong> live in production — RBAC,
+              semantic search, realtime messaging and 20+ admin tools, behind CI/CD, release
+              governance and backup/restore.
             </dd>
           </div>
         </dl>
