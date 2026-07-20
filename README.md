@@ -1,6 +1,6 @@
 # Portfolio
 
-Single-page portfolio / CV site for Yaroslav Krivushenko — Test Automation Architect (Agentic SDLC / Quality Engineering).
+Single-page portfolio / CV site for Yaroslav Krivushenko — Lead Test Automation Engineer (Agentic SDLC / Quality Engineering).
 
 Built with Vite + React + TypeScript. Deployed to GitHub Pages via GitHub Actions on every push to `main`.
 

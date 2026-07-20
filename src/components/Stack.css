@@ -81,6 +81,16 @@
   background: var(--violet-band-bg);
   border: 1px solid var(--violet-band-border);
   border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.stack__cert:hover {
+  background: var(--violet-bg);
+  border-color: var(--violet-border);
 }
 
 .stack__cert-label {
@@ -100,6 +110,14 @@
 .stack__cert-text {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.stack__cert-verify {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--violet-band-text);
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {

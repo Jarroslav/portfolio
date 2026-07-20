@@ -9,7 +9,7 @@ export function Hero() {
       <div className="hero__copy">
         <div className="hero__kicker">
           <span className="hero__dot" />
-          Test Automation Architect · Agentic SDLC
+          Lead Test Automation Engineer · Agentic SDLC
         </div>
         <h1 className="hero__title">
           Requirements to
@@ -43,7 +43,7 @@ export function Hero() {
           <div className="hero__building-label">Now building</div>
           <div className="hero__building-title">From Ashes</div>
           <div className="hero__building-desc">
-            62K+ LOC roleplay platform · Next.js 15 · Supabase · 11-agent HITL pipeline.
+            117K+ LOC roleplay platform · Next.js 15 · Supabase · 11-agent HITL pipeline.
           </div>
         </div>
       </div>

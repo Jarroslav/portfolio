@@ -45,11 +45,19 @@ export function Stack() {
           </div>
         ))}
       </div>
-      <div className="stack__cert">
+      <a
+        href="https://www.linkedin.com/in/yaroslav-krivushenko/details/certifications/"
+        target="_blank"
+        rel="noopener"
+        className="stack__cert"
+      >
         <span className="stack__cert-label">Anthropic Certified · 2026</span>
         <span className="stack__cert-divider" />
-        <span className="stack__cert-text">Claude Code · Agent Skills · MCP · Claude API · AI Fluency</span>
-      </div>
+        <span className="stack__cert-text">
+          Claude Code · MCP · Agent Skills · Claude API · AI Fluency
+        </span>
+        <span className="stack__cert-verify">Verify ↗</span>
+      </a>
     </section>
   )
 }
