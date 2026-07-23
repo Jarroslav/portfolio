@@ -45,14 +45,6 @@ export function Contact() {
           >
             GitHub ↗
           </a>
-          <a
-            href="https://www.instagram.com/yarro_"
-            target="_blank"
-            rel="noopener"
-            className="contact__btn contact__btn--outline"
-          >
-            Instagram ↗
-          </a>
         </div>
       </div>
       <div className="contact__footer">
