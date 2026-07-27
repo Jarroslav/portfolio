@@ -67,6 +67,14 @@ export function HighlightAgenticOS() {
             View on GitHub <span className="glyph">↗</span>
           </a>
           <a
+            href="https://jarroslav.github.io/agentic-os/setup/"
+            target="_blank"
+            rel="noopener"
+            className="card__arch"
+          >
+            Setup guide <span className="glyph">↗</span>
+          </a>
+          <a
             href="https://github.com/Jarroslav/agentic-os/blob/main/docs/PRINCIPLES.md"
             target="_blank"
             rel="noopener"
